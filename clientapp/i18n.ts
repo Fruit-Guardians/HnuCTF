@@ -11,7 +11,7 @@ i18n
   .init({
     ns: ['common'],
     defaultNS: 'common',
-    supportedLngs: ['zh', 'zh-TW', 'en'],
+    supportedLngs: ['zh', 'zh-HK', 'en'],
     fallbackLng: 'zh',
 
     detection: {
