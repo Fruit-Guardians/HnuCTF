@@ -99,19 +99,42 @@ export const GlobalVariableProvider: React.FC<{ children: ReactNode }> = ({ chil
         SchoolSmallIcon: "/images/A1natas.svg",
         SchoolUnionAuthText: "Union Auth",
         BGAnimation: false,
-        systemName: 'A1CTF',
+        systemName: 'HnuCTF',
         systemLogo: '',
         systemFavicon: '',
-        systemSlogan: 'A Modern CTF Platform',
-        systemFooter: '© 2025 A1CTF Team',
+        systemSlogan: '海南大学网络安全竞赛平台',
+        systemFooter: '© 2025 HNUSEC - 海南大学网络安全团队',
         systemICP: '',
-        systemOrganization: 'A1CTF',
-        systemOrganizationURL: 'https://github.com/carbofish/A1CTF',
+        systemOrganization: 'HNUSEC',
+        systemOrganizationURL: 'https://www.hnusec.com',
         themeColor: 'blue',
         darkModeDefault: true,
         allowUserTheme: true,
-        defaultLanguage: 'zh-CN',
-        AboutUS: "A1CTF Platform",
+        defaultLanguage: 'zh',
+        AboutUS: `# 关于 HnuCTF
+
+**HnuCTF** 是由海南大学网络安全团队 (HNUSEC) 主办的 CTF 竞赛平台。
+
+> 🚀 本平台基于 [A1CTF](https://github.com/carbofish/A1CTF) 开源项目二次开发，感谢原作者 @carbofish 的贡献！
+
+## 🛡️ HNUSEC
+
+海南大学网络安全团队成立于 2018 年，是海南大学信息安全方向的核心力量。团队专注于：
+- Web 安全
+- 二进制安全 (PWN/Reverse)
+- 密码学
+- 区块链安全
+
+## 🏆 我们的成就
+- 多次参与国内外 CTF 比赛并取得优异成绩
+- 承办海南大学校内 CTF 赛事
+
+## 📧 联系我们
+- 官网: [hnusec.com](https://www.hnusec.com)
+- GitHub: [Fruit-Guardians/HnuCTF](https://github.com/Fruit-Guardians/HnuCTF)
+
+---
+**Powered by [A1CTF](https://github.com/carbofish/A1CTF)** | AGPL-3.0 License`,
         captchaEnabled: false,
         updateVersion: '',
         fancyBackGroundIconWidth: 241.2,
@@ -266,19 +289,19 @@ export const GlobalVariableProvider: React.FC<{ children: ReactNode }> = ({ chil
     }, [isDarkMode]);
 
     return (
-        <globalVariableContext.Provider value={{ 
-            curProfile, 
-            updateProfile, 
-            serialOptions, 
-            clientConfig, 
-            updateClientConfg, 
-            isDarkMode, 
-            setIsDarkMode, 
-            refreshClientConfig, 
-            checkLoginStatus, 
-            unsetLoginStatus, 
-            getSystemLogo, 
-            getSystemLogoDefault, 
+        <globalVariableContext.Provider value={{
+            curProfile,
+            updateProfile,
+            serialOptions,
+            clientConfig,
+            updateClientConfg,
+            isDarkMode,
+            setIsDarkMode,
+            refreshClientConfig,
+            checkLoginStatus,
+            unsetLoginStatus,
+            getSystemLogo,
+            getSystemLogoDefault,
             isAdmin,
             localStorageUID,
             setCurProfile

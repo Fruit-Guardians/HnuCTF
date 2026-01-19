@@ -85,12 +85,12 @@ type SystemSettings struct {
 
 // 默认系统设置
 var DefaultSettings = SystemSettings{
-	SystemName:            "A1CTF",
-	SystemSlogan:          "A Modern CTF Platform",
-	SystemFooter:          "© 2025 A1CTF Team",
+	SystemName:            "HnuCTF",
+	SystemSlogan:          "海南大学网络安全竞赛平台",
+	SystemFooter:          "© 2025 HNUSEC - 海南大学网络安全团队",
 	SystemICP:             "None",
-	SystemOrganization:    "A1CTF",
-	SystemOrganizationURL: "https://github.com/carbofish/A1CTF",
+	SystemOrganization:    "HNUSEC",
+	SystemOrganizationURL: "https://www.hnusec.com",
 	ThemeColor:            "blue",
 	DarkModeDefault:       true,
 	AllowUserTheme:        true,
@@ -124,7 +124,30 @@ var DefaultSettings = SystemSettings{
 	BGAnimation: false,
 
 	CaptchaEnabled: true,
-	AboutUS:        "A1CTF Platform",
+	AboutUS: `# 关于 HnuCTF
+
+**HnuCTF** 是由海南大学网络安全团队 (HNUSEC) 主办的 CTF 竞赛平台。
+
+> 🚀 本平台基于 [A1CTF](https://github.com/carbofish/A1CTF) 开源项目二次开发，感谢原作者 @carbofish 的贡献！
+
+## 🛡️ HNUSEC
+
+海南大学网络安全团队成立于 2018 年，是海南大学信息安全方向的核心力量。团队专注于：
+- Web 安全
+- 二进制安全 (PWN/Reverse)
+- 密码学
+- 区块链安全
+
+## 🏆 我们的成就
+- 多次参与国内外 CTF 比赛并取得优异成绩
+- 承办海南大学校内 CTF 赛事
+
+## 📧 联系我们
+- 官网: [hnusec.com](https://www.hnusec.com)
+- GitHub: [Fruit-Guardians/HnuCTF](https://github.com/Fruit-Guardians/HnuCTF)
+
+---
+**Powered by [A1CTF](https://github.com/carbofish/A1CTF)** | AGPL-3.0 License`,
 
 	SmtpPort:                25,
 	SmtpPortType:            "none",

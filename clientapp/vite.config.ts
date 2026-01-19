@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import { resolve } from 'path'
 import devtoolsJson from 'vite-plugin-devtools-json';
 import ViteWebfontDownload from 'vite-plugin-webfont-dl';
-import oxlintPlugin from 'vite-plugin-oxlint';
+// import oxlintPlugin from 'vite-plugin-oxlint'; // Disabled on Windows
 import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig({
@@ -15,6 +15,7 @@ export default defineConfig({
     },
   },
   server: {
+    port: 5172,
     proxy: {
       "/api": {
         target: "http://localhost:8081",
@@ -29,7 +30,7 @@ export default defineConfig({
     devSourcemap: true,
   },
   plugins: [
-    oxlintPlugin(),
+    // oxlintPlugin(), // Disabled on Windows
     tailwindcss(),
     devtoolsJson(),
     reactRouter(),

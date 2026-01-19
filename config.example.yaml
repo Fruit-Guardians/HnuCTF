@@ -8,7 +8,7 @@ system:
   # current only support ico
   favicon: ./data/favicon.ico
   # The base url for your website
-  baseURL: http://localhost:5173
+  baseURL: http://localhost:5172
   # if you are using a reverse proxy like nginx, enable it to get the real client ip
   forwarded-by-client-ip: true
   # real client ip request headers added by your reverse proxy server
