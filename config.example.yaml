@@ -1,0 +1,114 @@
+configVersion: v1
+
+system:
+  gin-port: 7777
+  gin-host: 0.0.0.0
+  prometheus-port: 8081
+  prometheus-host: 0.0.0.0
+  # current only support ico
+  favicon: ./data/favicon.ico
+  # The base url for your website
+  baseURL: http://localhost:5173
+  # if you are using a reverse proxy like nginx, enable it to get the real client ip
+  forwarded-by-client-ip: true
+  # real client ip request headers added by your reverse proxy server
+  remote-ip-headers:
+    - X-Forwarded-For
+    - X-Real-IP
+  # make sure that you include your reverse proxy server's ip in this list
+  # don't use 0.0.0.0/0, it's dangerous
+  trusted-proxies:
+    - 0.0.0.0/0
+  # enable pprof for performance profiling, default is false
+  pprof-enable: false
+
+redis:
+  address: localhost:6379
+  password: ""
+  db: 0
+
+k8s:
+  k8s-config-file: "k8sconfig.yaml"
+  node-ip-map:
+    - { name: "vm-4-3-ubuntu", "address": "example.com/1.1.1.1" }
+  # manual port assignments
+  manual-port-assignments:
+    enabled: false
+    port-range-map:
+     # You can add multiple port range map with same node name
+     # - { name: "vm-4-3-ubuntu", "start": 23101, "end": 24101 }
+     # - { name: "vm-4-3-ubuntu", "start": 24102, "end": 25102 }
+  pull-secret-names:
+    # You can add multiple pull secret names here, make sure they are created in the a1ctf-challenges namespace as the pods
+    # - default-name
+  custom-dns-server:
+    enabled: false
+    nameservers:
+      - 8.8.8.8
+
+postgres:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+  dbname: a1ctf
+  sslmode: disable
+
+cache-time:
+  user-list: 500ms
+  upload-list: 500ms
+  solved-challenges-for-game: 500ms
+  game-info: 500ms
+  all-teams-for-game: 500ms
+  game-scoreboard: 500ms
+  challenges-for-game: 1s
+  challenge-detail: 500ms
+  container-status: 100ms
+  team-flag: 100ms
+  team-solve-status: 100ms
+  judge-result: 100ms
+
+# time format like 1s 500ms etc..
+redis-cache-time:
+  user-list: 500ms
+  upload-list: 500ms
+  solved-challenges-for-game: 500ms
+  game-info: 500ms
+  all-teams-for-game: 500ms
+
+# if you need garafana, enable it
+monitoring:
+  enabled: true
+  system-monitor-interval: 1s
+  gorm-slow-query-threshold: 100ms
+
+# job intervals
+job-intervals:
+  update-activate-game-score: 500ms
+  update-active-game-score-board: 5s
+  flag-judge: 1s
+  update-game-scoreboard-cache: 1s
+  container-updating: 1s
+  compress-and-delete-old-logs: 2h
+
+# captcha settings
+cap-settings:
+  defaultChallengeTokenSize: 25
+  defaultChallengeCount: 80
+  defaultChallengeSize: 32
+
+  # difficulty is the number of leading zeros in the hash, don't set it too low or too high, it will affect the performance
+  defaultChallengeDifficulty: 4
+  defaultChallengeExpires: 10m
+
+  # token size is the size of the token in bytes
+  defaultTokenSize: 64
+  defaultTokenIdSize: 16
+  defaultTokenExpires: 20m
+  defaultTokenVerifyOnce: true
+
+  defaultHttpHandleLimitRPS: 10
+  defaultHttpHandleLimitBurst: 50
+
+game-settings:
+  container-cooldown-time: 60s

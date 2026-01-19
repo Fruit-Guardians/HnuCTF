@@ -1,0 +1,62 @@
+# Git相关
+.gitignore
+
+# 构建产物
+app
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 测试文件
+*_test.go
+test/
+tests/
+
+# 临时文件
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node.js相关
+clientapp/node_modules/
+clientapp/build/
+clientapp/.next/
+clientapp/dist/
+
+# Go相关
+vendor/
+*.mod.bak
+*.sum.bak
+
+# 密钥文件
+*.pem
+*.key
+*.crt
+
+# 配置文件
+config.yaml
+.env
+.env.local
+
+# 数据文件
+data/
+*.db
+*.sqlite
+
+# 文档
+README.md
+*.md
+docs/
+
+# Docker相关
+Dockerfile*
+docker-compose*.yml
+.dockerignore

@@ -1,0 +1,42 @@
+{
+    "delete": "Delete Challenge",
+    "alert_title": "Warnning",
+    "save": "Save",
+    "close": "Close",
+    "delete_description": "Are you sure you want to delete this challenge? (This action is irreversible!)",
+    "delete_success": "Challenge deleted successfully",
+    "offline": "Disable Challenge",
+    "online": "Enable Challenge",
+    "switch_description": "This operation will change the challenge status. Please confirm again!",
+    "magic_tool": "Magic Toolbox",
+    "update_success": "Update successful",
+    "setting": "Challenge Settings",
+    "setting_description": "Here you can modify the basic information of the challenge",
+    "base": "Basic Settings",
+    "judge_and_hint": "Judging & Hint Settings",
+    "judge_and_hint_description": "Here you can override the default judging of the challenge",
+    "container": "Container Management",
+    "challenge_tool": "Challenge Tools",
+    "history": "Submission History",
+    "dashboard": {
+        "title": "Challenges",
+        "description": "Manage and edit {{count}} challenges",
+        "placeholder": "Search challenge name...",
+        "add": "Add Challenge",
+        "filter": "Categories",
+        "all": "All",
+        "copy": "Copy Challenge Name",
+        "edit": "Edit Challenge",
+        "delete": {
+            "title": "Delete Challenge",
+            "message": "Are you sure you want to delete challenge「{{name}}」?",
+            "success": "Challenge「{{name}}」deleted successfully"
+        },
+        "empty": {
+            "title": "No Challenges Found",
+            "search": "No challenges found containing \"{{content}}\"",
+            "category": "No challenges in the current category"
+        },
+        "clear": "Clear Search"
+    }
+}

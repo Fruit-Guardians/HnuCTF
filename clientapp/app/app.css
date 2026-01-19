@@ -1,0 +1,355 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    --font-sans: "JetBrains Mono", "Inter", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+    /* @apply bg-white dark:bg-black; */
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+    --radius: 0.625rem;
+    --background: oklch(1 0 0);
+    --section-background: oklch(0.145 0 0 / 90%);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+
+    --strong-markdown-color: oklch(0.70 0.19 48);
+    --toastify-toast-padding: 10px 30px 10px 20px!important;
+    --toastify-toast-min-height: 58px!important;
+}
+
+.dark {
+    --background: oklch(0.145 0 0);
+    --section-background: oklch(1 0 0 / 90%);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.488 0.243 264.376);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+
+    --chart-1: oklch(0.488 0.243 264.376);
+    --chart-2: oklch(0.696 0.17 162.48);
+    --chart-3: oklch(0.769 0.188 70.08);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+        font-family: "JetBrains Mono", "Inter";
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: "JetBrains Mono", "Inter";
+    }
+
+    .markdown-body :where(ul):where(:not(.not-prose, .not-prose *)) {
+        list-style: revert;
+        margin: revert;
+        padding: revert;
+    }
+
+    .markdown-body :where(ol):where(:not(.not-prose, .not-prose *)) {
+        list-style: revert;
+        margin: revert;
+        padding: revert;
+    }
+}
+
+#a1logo {
+    transform: scaleX(-1);
+}
+
+#a1path {
+    fill: none;
+    stroke: hsl(var(--primary));
+    /* 线条颜色 */
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 0;
+    /* 设定虚线长度，这里是路径的估算长度 */
+    stroke-dashoffset: 0;
+    /* 初始路径不可见 */
+    animation: draw 5s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+    filter: url(#glow);
+    /* 应用炫光效果 */
+}
+
+/* 定义路径绘制的动画 */
+@keyframes draw {
+    from {
+        stroke-dashoffset: 3000;
+        /* 从完全不可见开始 */
+    }
+
+    to {
+        stroke-dashoffset: 0;
+        /* 结束时路径完全绘制出来 */
+    }
+}
+
+@keyframes glow {
+    0% {
+        stroke: #3498db;
+    }
+
+    50% {
+        stroke: #1abc9c;
+    }
+
+    100% {
+        stroke: #e74c3c;
+    }
+}
+
+.header-theme {
+    background-color: var(--background);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 1300px;
+}
+
+/* 自定义终端主题 */
+#terminalEditor {
+    /* @apply backdrop-blur-sm; */
+    border-radius: 0 !important;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE 11 */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+.xterm .xterm-viewport {
+    background-color: transparent !important;
+}
+
+.xterm-selection div {
+    opacity: 0.4;
+}
+
+.xterm-decoration-top {
+    background-color: transparent !important;
+}
+
+.index_editor__JoDSg .index_caret__VS4iV {
+    animation: index_blink__FJp0- 0.3s ease-in-out !important;
+}
+
+.index_caretAfter__6aXPx {
+    /* opacity: 0.9!important; */
+    width: 2px !important;
+}
+
+.transition-transform_bordercolor {
+    transition-property: border-color, transform, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+.xterm-rows span {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}
+
+#scroller {
+    /* fill parent */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* set to some transparent color */
+    border-color: rgba(0, 0, 0, 0.0);
+    /* here we make the color transition */
+    transition: border-color 0.3s linear;
+    /* make this element do the scrolling */
+    overflow: auto;
+}
+
+#scroller:hover {
+    /* the color we want the scrollbar on hover */
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+#scroller::-webkit-scrollbar,
+#scroller::-webkit-scrollbar-thumb,
+#scroller::-webkit-scrollbar-corner {
+    /* add border to act as background-color */
+    border-right-style: inset;
+    /* sum viewport dimensions to guarantee border will fill scrollbar */
+    border-right-width: 6px;
+    width: 6px;
+    /* inherit border-color to inherit transitions */
+    border-color: inherit;
+}
+
+.xterm-viewport {
+    overflow: hidden !important;
+}
+
+::-moz-selection {
+    background: var(--section-background);
+    color: var(--background);
+}
+
+::selection {
+    background: var(--section-background);
+    color: var(--background);
+}
+
+cap-widget {
+    --cap-widget-width: 100%;
+    --cap-background: var(--background);
+    --cap-color: var(--foreground);
+    --cap-border-color: var(--border);
+    --cap-checkbox-background: color-mix(in oklab, var(--background) 10%, transparent);
+
+    --cap-spinner-color: var(--foreground);
+    --cap-spinner-background-color: var(--background);
+}
+
+.Toastify__progress-bar--wrp {
+    height: 3px!important;
+}
+
+.Toastify__toast {
+    --animate-duration: 0.7s!important;
+    width: auto!important;
+    max-width: 80vw!important;
+    min-width: 340px;
+}
+
+@keyframes marqueeX {
+  from { transform: translateX(var(--from)); }
+  to   { transform: translateX(var(--to)); }
+}
+
+.marquee-run {
+  animation-name: marqueeX;
+  animation-duration: var(--dur);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  will-change: transform;
+}

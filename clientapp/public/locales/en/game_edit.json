@@ -1,0 +1,351 @@
+{
+    "page": {
+        "prev": "Prev",
+        "next": "Next"
+    },
+    "action": "Actions",
+    "events": {
+        "title": "Game Events",
+        "auto": "Auto Update",
+        "submit": {
+            "title": "Submission",
+            "count": "Total {{count}} submissions",
+            "empty1": "No submissions yet",
+            "empty2": "Submissions will appear here once players start submitting",
+            "time": "Time",
+            "status": "Status",
+            "user": "User",
+            "team": "Team",
+            "challenge": "Challenge",
+            "flag": "Flag"
+        },
+        "cheat": {
+            "title": "Abnormal",
+            "count": "Total {{count}} abnormal records",
+            "empty1": "No abnormal records",
+            "empty2": "The system will automatically detect and record abnormal behaviors",
+            "someone": "Submitted another team's flag",
+            "attachment": "Attachment not downloaded",
+            "container": "Container not started",
+            "time": "Time",
+            "type": "Type",
+            "info": "Info",
+            "ip": "Submitter IP",
+            "flag": "Team that submitted a leaked flag"
+        },
+        "filter": {
+            "title1": "Filter Submission Records",
+            "title2": "Filter Abnormal Records",
+            "add": "Add Filter",
+            "clear": "Clear Filters",
+            "select": "Filter Condition",
+            "team": "Team Name",
+            "challenge": "Challenge Name",
+            "status": "Evaluation Status",
+            "time": "Time Range",
+            "chal_id": "Challenge ID",
+            "team_id": "Team ID",
+            "keyword": " Keyword",
+            "placeholder": "Please enter keyword"
+        }
+    },
+    "basic": {
+        "title": "Basic Information",
+        "name": {
+            "label": "Game Name",
+            "description": "Please enter the game name"
+        },
+        "start_time": {
+            "label": "Start Time",
+            "description": "Please select the game start time"
+        },
+        "end_time": {
+            "label": "End Time",
+            "description": "Please select the game end time"
+        },
+        "summary": {
+            "label": "Game Summary",
+            "description": "Please enter the game summary"
+        },
+        "description": {
+            "label": "Game Detail",
+            "description": "Please enter detailed game information (Markdown supported)"
+        },
+        "practice": {
+            "label": "Practice Mode",
+            "description": "Enable practice mode"
+        },
+        "wp": {
+            "label": "WriteUp",
+            "description": "Require participants to submit WriteUps"
+        },
+        "visible": {
+            "label": "Visibility",
+            "description": "Whether this game is visible"
+        },
+        "group_invite_code_enable": {
+            "label": "Enable Group Invite Code",
+            "description": "If enabled, participants must use a group invite code to register"
+        },
+        "icon": {
+            "label": "Game Icon",
+            "dark": "Dark",
+            "light": "Light"
+        }
+    },
+    "detail": {
+        "title": "Detailed Settings",
+        "invite": {
+            "title": "Invitation Code",
+            "description": "Leave empty if not required"
+        },
+        "policy": {
+            "title": "Team Policy",
+            "placeholder": "Select a team policy",
+            "manual": "Manual approval by admin",
+            "auto": "Auto approval",
+            "description": "Please select a team policy"
+        },
+        "wp_time": {
+            "title": "WriteUp Submission Deadline",
+            "description": "Please select the deadline for WriteUp submissions"
+        },
+        "limit": {
+            "member": {
+                "title": "Team Member Limit",
+                "description": "Set the maximum number of members per team"
+            },
+            "container": {
+                "title": "Team Container Limit",
+                "description": "Set the maximum number of containers a team can run simultaneously"
+            }
+        },
+        "blood": {
+            "0": "0% means bonus disabled",
+            "1": "First Blood bonus ratio",
+            "2": "Second Blood bonus ratio",
+            "3": "Third Blood bonus ratio"
+        },
+        "upload": {
+            "title": "Upload Game Poster",
+            "description": "Click to upload a new game poster",
+            "type": "Please select an image file",
+            "size": "Image size must not exceed 10 MB",
+            "success": "Game poster uploaded successfully"
+        }
+    },
+    "timeline": {
+        "invalid": {
+            "index": "Invalid timeline index",
+            "id": "Challenge ID not found"
+        },
+        "title": "Game Timeline",
+        "name": "Timeline Name",
+        "placeholder": "Please enter the name of this timeline",
+        "start": "Start Time",
+        "end": "End Time",
+        "add": {
+            "button": "Add Timeline",
+            "title": "Add New Timeline"
+        },
+        "delete": {
+            "title": "Confirm Deletion",
+            "description": "This action cannot be undone"
+        },
+        "drag": "Please add a timeline first",
+        "edit": "Edit Timeline",
+        "global": {
+            "title": "Global Challenges",
+            "description": "Challenges visible throughout the entire competition",
+            "empty": "No global challenges yet"
+        },
+        "timeline": {
+            "title": "Timeline Challenges",
+            "description": "Challenges assigned to a specific timeline",
+            "empty": "Please add a timeline first",
+            "drag": "Drag challenges to here"
+        }
+    },
+    "group": {
+        "title": "Participant Group Management",
+        "add": {
+            "button": "Create Group",
+            "title": "Create New Group",
+            "description": "Create a new participant group for the game",
+            "name": {
+                "label": "Group Name",
+                "placeholder": "e.g. Undergraduate, Graduate"
+            },
+            "info": {
+                "label": "Group Description",
+                "placeholder": "Describe the characteristics or requirements of this group"
+            },
+            "success": "Group created successfully"
+        },
+        "edit": {
+            "title": "Edit Group",
+            "description": "Modify the group's name and description",
+            "success": "Group updated successfully"
+        },
+        "delete_success": "Group deleted successfully",
+        "error": {
+            "empty": "Group name cannot be empty",
+            "long1": "Group name cannot exceed 100 characters",
+            "long2": "Group description cannot exceed 500 characters"
+        },
+        "option": "Optional",
+        "time": "Created At",
+        "invite_code": "InviteCode(Only valid if group invite code is enabled)",
+        "people_count": "Number of Teams",
+        "group_id": "Group ID",
+        "copy": "Copy InviteCode",
+        "copy_success": "InviteCode copied to clipboard",
+        "empty": "No groups yet. Click \"Create Group\" to add one"
+    },
+    "notice": {
+        "empty": "Notice can't be empty",
+        "create": {
+            "button": "Create Notice",
+            "dialog": "Create New Notice",
+            "description": "The notice will be immediately pushed to all participants",
+            "title": {
+                "label": "Notice Title",
+                "placeholder": "Enter the notice title"
+            },
+            "content": "Notice Content",
+            "success": "Notice created successfully"
+        },
+        "list": {
+            "empty": "No notices available",
+            "first": "Create the first notice to inform participants"
+        },
+        "char": "characters",
+        "delete": {
+            "title": "Confirm Notice Deletion",
+            "confirm": "Are you sure you want to delete the notice \"<s>{{title}}</s>\"?",
+            "description": "This action cannot be undone. After deletion, participants will no longer see this notice!",
+            "success": "Notice deleted successfully"
+        },
+        "title": "Total {{count}} notices",
+        "more": "View More",
+        "time": "Published At"
+    },
+    "team": {
+        "approve": {
+            "title": "Approve Team",
+            "name": "Approve",
+            "loading": "Approving team..."
+        },
+        "ban": {
+            "title": "Confirm Ban",
+            "description": "Are you sure you want to ban this team? They will be prohibited from participating in the game!",
+            "ban": "Ban Team",
+            "loading": "Banning team..."
+        },
+        "unban": {
+            "title": "Confirm Unban",
+            "description": "Are you sure you want to unban this team? They will be allowed to continue participating in the game!",
+            "unban": "Unban Team",
+            "loading": "Unbanning team..."
+        },
+        "refresh": {
+            "success": "Team status updated",
+            "error": "Failed to update team status"
+        },
+        "delete": {
+            "title": "Confirm Deletion",
+            "description": "Are you sure you want to delete this team? This action cannot be undone!",
+            "delete": "Delete Team",
+            "pending": "Deleting team...",
+            "success": "Team deleted successfully",
+            "error": "Failed to delete team"
+        },
+        "status": {
+            "approved": "Approved",
+            "pending": "Pending",
+            "banned": "Banned",
+            "rejected": "Rejected",
+            "accepted": "Accepted",
+            "default": "Not Registered"
+        },
+        "score": "Score",
+        "member": "Team Members",
+        "list": "Member List",
+        "user_id": "User ID",
+        "slogan": "Team Slogan",
+        "group_name": "Group Name",
+        "menu": {
+            "title": "Open Menu",
+            "copy": "Copy Team ID"
+        },
+        "empty": "No team data available",
+        "row": "Columns",
+        "select": "{{a}} / {{b}} rows selected",
+        "support": "Supports team name, team ID, member username, member user ID, invite code, team hash, team slogan"
+    },
+    "container": {
+        "status": {
+            "running": "Running",
+            "stopped": "Stopped",
+            "starting": "Starting",
+            "error": "Error",
+            "stopping": "Stopping",
+            "queueing": "Queued",
+            "empty": "No Containers",
+            "unknow": "Unknown"
+        },
+        "table": {
+            "select": {
+                "header": "Select All",
+                "cell": "Select Row"
+            },
+            "expire": "Expiration Time",
+            "ports": "Access Endpoints",
+            "no_port": "No Available Links"
+        },
+        "stop": {
+            "stop": "Stop Container",
+            "title": "Confirm Stop",
+            "description": "Are you sure you want to stop this container?",
+            "pending": "Stopping container...",
+            "success": "Container is stopping",
+            "error": "Failed to stop container",
+            "batch": {
+                "title": "Batch Stop ({{count}})",
+                "select": "Please select at least one container",
+                "confirm": "Confirm Batch Stop",
+                "description": "Are you sure you want to stop the selected {{count}} containers?",
+                "pending": "Stopping {{count}} containers...",
+                "success1": "Successfully stopped {{count}} containers",
+                "success2": "Stopped {{s}} containers successfully, failed {{f}}",
+                "error": "Failed to batch stop containers"
+            }
+        },
+        "extend": {
+            "title": "Extend Container Time",
+            "pending": "Extending container time...",
+            "success": "Container time extended",
+            "error": "Failed to extend container time"
+        },
+        "flag": {
+            "title": "Copy Flag",
+            "pending": "Retrieving flag from container...",
+            "success": "Flag copied to clipboard",
+            "error": "Failed to retrieve container flag"
+        },
+        "terminal": {
+            "title": "Container Terminal",
+            "select": "Select One",
+            "copy": {
+                "id": "Copy Container ID",
+                "pod": "Copy Pod ID"
+            }
+        },
+        "search": "Supports team ID, Pod ID, container ID, team name, challenge name, challenge ID, team ID",
+        "show": {
+            "error": "Show Error",
+            "item": "Show Items"
+        },
+        "empty": "No container data"
+    }
+}

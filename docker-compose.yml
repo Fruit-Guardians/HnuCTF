@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    image: test-a1ctf:latest
+    ports:
+      - "8081:7777"
+    environment:
+      - GIN_MODE=release
+    volumes:
+      - ./appdata:/app/data
+      - ./config.yaml:/app/config.yaml:ro
+      - ./k8sconfig.yaml:/app/k8sconfig.yaml:ro
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+    networks:
+      - a1ctf-network
+
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: a1ctf
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+    restart: unless-stopped
+    networks:
+      - a1ctf-network
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    networks:
+      - a1ctf-network
+
+networks:
+  a1ctf-network:
+    driver: bridge 

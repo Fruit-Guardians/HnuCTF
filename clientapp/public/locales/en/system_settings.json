@@ -1,0 +1,141 @@
+{
+    "fetch_error": "Failed to fetch system settings, please refresh and try again",
+    "update_success": "System settings updated successfully",
+    "update_error": "Unable to save system settings, please try again later",
+    "save": "Save Settings",
+    "saving": "Saving...",
+    "sidebar": {
+        "title": "Module Management",
+        "basic": "Basic Settings",
+        "resource": "Resource Settings",
+        "mail": "Email Settings",
+        "template": "Template Settings",
+        "security": "Security Policy",
+        "account-policy": "Account Policy",
+        "others": "Other Settings",
+        "aboutus": "About Page"
+    },
+    "basic": {
+        "title": "Basic Settings",
+        "name": "System Name",
+        "name_description": "Please enter the system name",
+        "slogan": "System Slogan",
+        "slogan_description": "Please enter the system slogan",
+        "footer": "Footer Content",
+        "footer_description": "Please enter the footer content",
+        "icp": "ICP Filing Number (Optional)",
+        "icp_description": "Please enter the ICP registration number",
+        "org": "Organization Name",
+        "org_description": "Please enter the organization name",
+        "url": "Organization URL",
+        "url_description": "Please enter the organization link (supports redirection)",
+        "logo": "Logo Alt Text",
+        "logo_description": "Content displayed when hovering over the system logo",
+        "auth": "Unified Authentication Name",
+        "auth_description": "The display name of the unified authentication button on the login page",
+        "summary": "System Summary",
+        "summary_description": "Please enter the system summary",
+        "animation": "Enable Background Animation",
+        "animation_description": "Background animations consume more resources and can be disabled if needed"
+    },
+    "resource": {
+        "bg_icon1": "Background Icon (Light Mode)",
+        "bg_icon2": "Background Icon (Dark Mode)",
+        "sys_icon1": "System Icon (Dark Mode)",
+        "sys_icon2": "System Icon (Light Mode)",
+        "1blood": "First Blood Gold Trophy Icon",
+        "1blood_description": "The icon displayed on the screen when the first blood is achieved",
+        "2blood": "Second Blood Silver Trophy Icon",
+        "2blood_description": "The icon displayed on the screen when the second blood is announced",
+        "3blood": "Third Blood Bronze Trophy Icon",
+        "3blood_description": "The icon displayed on the screen when the third blood is announced",
+        "school_icon1": "School/Organization Logo (Large)",
+        "school_icon1_description": "The large logo of your school or organization",
+        "school_icon2": "School/Organization Logo (Small)",
+        "school_icon2_description": "The small logo of your school or organization",
+        "upload_success": "Upload Successful",
+        "upload_failed": "Upload Failed",
+        "setting": "Resource Settings",
+        "width": "Background Icon Width",
+        "width_description": "The width of each image in the background animation, please specify correctly",
+        "height": "Background Icon Height",
+        "height_description": "The height of each image in the background animation, please specify correctly"
+    },
+    "email": {
+        "title": "Email Settings",
+        "smtp_host": "SMTP Host",
+        "smtp_port": "SMTP Port",
+        "smtp_port_type": {
+            "title": "SMTP Port Type",
+            "placeholder": "Please select SMTP port type",
+            "none": "None (Default Port 25)",
+            "tls": "TLS",
+            "starttls": "STARTTLS"
+        },
+        "smtp_sender": "Sender Name",
+        "smtp_username": "SMTP Username",
+        "smtp_password": {
+            "title": "SMTP Password",
+            "description": "Email password or authorization code"
+        },
+        "smtp_address": {
+            "title": "Sender Address",
+            "example": "Example: noreply@example.com"
+        },
+        "smtp_test": {
+            "title": "Email Test",
+            "empty_error": "Please enter a test email",
+            "success": "Test email sent successfully",
+            "send": "Send Test",
+            "description": "Please save the settings before sending a test email :)"
+        }
+    },
+    "template": {
+        "title": "Email Templates",
+        "email_title": "Email Title",
+        "email_content": "Email Content",
+        "email_test": "Send Test Email (Template variables will not be replaced)",
+        "email_test_placeholder": "Please enter the recipient's email address",
+        "send": "Send Test",
+        "verify": {
+            "title": "User Email Verification Template",
+            "description": "You can set the user email verification template here",
+            "email_description": "You can enter your email template here. The template variable for username is {username}, and the template variable for the verification link is {verification_link}"
+        },
+        "reset": {
+            "title": "Password Reset Template",
+            "description": "You can set the password reset email template here",
+            "email_description": "You can enter your email template here. The template variable for username is {username}, and the template variable for the reset link is {reset_link}"
+        }
+    },
+    "security": {
+        "title": "Security Settings",
+        "captcha": "Enable CAPTCHA",
+        "captcha_description": "Enable CAPTCHA verification on login, registration, and other pages"
+    },
+    "user": {
+        "title": "User Policy",
+        "register_enable": "Enable Registration",
+        "register_enable_description": "Allow new users to register",
+        "active_method": "Account Activation Method",
+        "active_choose": "Please select an account activation method",
+        "active_auto": "Automatic Activation (No verification required)",
+        "active_email": "Email Verification Activation",
+        "active_admin": "Admin Approval Activation"
+    },
+    "other": {
+        "title": "Other Settings",
+        "language": "Default Language",
+        "language_placeholder": "Select default language",
+        "zh": "Simplified Chinese (简体中文)",
+        "en": "English (US)",
+        "timezone": "Timezone Settings",
+        "timezone_placeholder": "Select system timezone",
+        "shanghai": "China Standard Time (UTC+8)",
+        "utc": "Coordinated Universal Time (UTC)",
+        "nk": "Eastern Time (US) (UTC-5/4)",
+        "london": "UK Time / GMT (UTC+0/1)",
+        "file_max_size": "Maximum Upload File Size (MB)"
+    },
+    "aboutus": "About Page - Edit"
+}

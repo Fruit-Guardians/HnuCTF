@@ -1,0 +1,58 @@
+{
+    "username": "Username",
+    "role": {
+        "title": "User Role",
+        "admin": "Admin",
+        "monitor": "Monitor",
+        "user": "User",
+        "unknow": "Unknown"
+    },
+    "email": "Email",
+    "register_ip": "Registration IP",
+    "last_ip": "Last Login IP",
+    "realname": "Real Name",
+    "student_id": "Student ID",
+    "phone": "Phone Number",
+    "slogan": "Slogan",
+    "actions": {
+        "title": "Actions",
+        "edit": "Edit",
+        "open": "Open Menu",
+        "copy": "Copy User ID",
+        "reset": "Reset Password",
+        "delete": "Delete User",
+        "choose": "{{count}} rows selected"
+    },
+    "search": {
+        "title": "Enter a keyword to search for users",
+        "description": "Supports searching by username, email address, profile info, user slogan, user ID, or last login IP",
+        "row": "Columns",
+        "empty": "No data available"
+    },
+    "delete": {
+        "title": "Confirm Deletion",
+        "description": "Are you sure you want to delete this user? This action cannot be undone!",
+        "pending": "Deleting...",
+        "success": "User deleted",
+        "failed": "Failed to delete user"
+    },
+    "reset": {
+        "title": "Confirm Password Reset",
+        "description": "Are you sure you want to reset this user's password?",
+        "pending": "Resetting...",
+        "success": "New password: {{pwd}} (copied to clipboard)",
+        "error": "Password reset failed"
+    },
+    "edit": {
+        "name_error": "Username must be at least 2 characters",
+        "email_error": "Please enter a valid email address",
+        "success": "User information updated successfully",
+        "title": "Edit User",
+        "default_name": "San Zhang",
+        "username": "User login name",
+        "slogan": "I love CTF!",
+        "role": "Please select a user role",
+        "role_description": "The user role determines the user's permissions"
+    },
+    "save": "Save"
+}

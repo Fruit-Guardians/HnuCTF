@@ -1,0 +1,57 @@
+{
+    "home": "Home",
+    "race": "Competitions",
+    "team": "Teams",
+    "about": "About",
+    "wp": "Articals",
+    "signup": "Signup",
+    "login": "Login",
+    "settings": "Settings",
+    "change_password_header": "Change Password",
+    "login_out": "Login out",
+    "version": "Version",
+    "login_out_success": "Login out successful!",
+    "system_color": "System Color",
+    "enable_background_animation": "Enable Animation",
+    "disable_background_animation": "Disable Animation",
+    "close": "Close",
+    "back_to_home": "Back to home",
+    "page_not_found": "Page not found",
+    "login_first": "Please login first",
+    "loading": "Loading...",
+    "admin": "Admin",
+    "continue": "Continue",
+    "answer_incorrect": "Incorrect answer, please try again",
+    "complete_math_question": "Complete the math question below",
+    "final_confirm": "Are you sure?",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "error": {
+        "unknow": "An unknown error occurred",
+        "default": "Server error",
+        "request": "Network connection failed, please check your network",
+        "email": "Please verify your email first",
+        "400": "Bad request",
+        "401": "Unauthorized, please login again",
+        "403": "Forbidden: Access denied",
+        "404": "Resource not found",
+        "500": "Internal server error",
+        "502": "Bad gateway",
+        "503": "Service unavailable",
+        "504": "Gateway timeout"
+    },
+    "toast": {
+        "notice": {
+            "title": "New Announcement!",
+            "open": "Open & Check"
+        },
+        "hint": {
+            "title": "New Hint!",
+            "content": "💡 Challenge [{{name}}] has a new hint"
+        },
+        "copy": {
+            "success": "Copied Successfully",
+            "failed": "Copy Failed"
+        }
+    }
+}

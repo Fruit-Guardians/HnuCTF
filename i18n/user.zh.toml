@@ -1,0 +1,517 @@
+# JWT Auth 错误信息
+
+[JWTErrForbidden]
+description = "您没有此操作的权限"
+other = "您没有此操作的权限"
+
+[JWTErrInvalidSigningAlgorithm]
+description = "签名算法无效"
+other = "签名算法无效"
+
+[JWTErrMissingExpField]
+description = "缺少过期时间"
+other = "缺少过期时间"
+
+[JWTErrExpiredToken]
+description = "Token已过期"
+other = "Token已过期"
+
+[JWTErrWrongFormatOfExp]
+description = "过期时间必须是float64格式"
+other = "过期时间必须是float64格式"
+
+# File Controller 错误信息
+
+[NoFileUploaded]
+description = "未上传文件"
+other = "未上传文件"
+
+[FileTooLarge]
+description = "文件过大"
+other = "文件过大（最大50MB）"
+
+[FailedToCreateUploadDirectory]
+description = "创建上传目录失败"
+other = "创建上传目录失败"
+
+[FailedToSaveFile]
+description = "保存文件失败"
+other = "保存文件失败"
+
+[FailedToSaveFileRecord]
+description = "保存文件记录失败"
+other = "保存文件记录失败"
+
+[InvalidFileID]
+description = "无效的文件ID"
+other = "无效的文件ID"
+
+[FailedToLoadFilesMap]
+description = "加载文件映射失败"
+other = "加载文件映射失败"
+
+[FileNotFound]
+description = "文件未找到"
+other = "文件未找到"
+
+[FileNotFoundOnServer]
+description = "服务器上未找到文件"
+other = "服务器上未找到文件"
+
+[ErrorOpeningFile]
+description = "打开文件错误"
+other = "打开文件错误"
+
+[InvalidUserID]
+description = "无效的用户ID"
+other = "无效的用户ID"
+
+[NoAvatarFileUploaded]
+description = "未上传头像文件"
+other = "未上传头像文件"
+
+[UploadedFileIsNotImage]
+description = "上传的文件不是图片"
+other = "上传的文件不是图片"
+
+[DatabaseQueryFailed]
+description = "数据库查询失败"
+other = "数据库查询失败"
+
+[FailedToSaveAvatarFile]
+description = "保存头像文件失败"
+other = "保存头像文件失败"
+
+[FailedToUpdateUserAvatar]
+description = "更新用户头像失败"
+other = "更新用户头像失败"
+
+[FailedToCommitTransaction]
+description = "提交事务失败"
+other = "提交事务失败"
+
+[AvatarUploadedSuccessfully]
+description = "头像上传成功"
+other = "头像上传成功"
+
+[InvalidTeamID]
+description = "无效的团队ID"
+other = "无效的团队ID"
+
+[TeamNotFound]
+description = "团队未找到"
+other = "团队未找到"
+
+[UserIsNotMemberOfTeam]
+description = "用户不是此团队的成员"
+other = "用户不是此团队的成员"
+
+[FailedToUpdateTeamAvatar]
+description = "更新团队头像失败"
+other = "更新团队头像失败"
+
+[TeamAvatarUploadedSuccessfully]
+description = "团队头像上传成功"
+other = "团队头像上传成功"
+
+# User Challenge Controller 错误信息
+
+[FailedToLoadGameChallenges]
+description = "加载比赛题目失败"
+other = "加载比赛题目失败"
+
+[FailedToLoadSolves]
+description = "加载解题记录失败"
+other = "加载解题记录失败"
+
+[InvalidChallengeID]
+description = "无效的题目ID"
+other = "无效的题目ID"
+
+[FailedToCheckChallengeVisibility]
+description = "检查题目可见性失败"
+other = "检查题目可见性失败"
+
+[ChallengeNotFound]
+description = "题目未找到"
+other = "题目未找到"
+
+[FailedToLoadChallengeDetails]
+description = "加载题目详情失败"
+other = "加载题目详情失败"
+
+[SystemError]
+description = "系统错误"
+other = "系统错误"
+
+[FailedToLoadChallengeAttachments]
+description = "加载题目附件失败"
+other = "加载题目附件失败"
+
+[FailedToLoadChallengeHints]
+description = "加载题目提示失败"
+other = "加载题目提示失败"
+
+[FailedToLoadContainers]
+description = "加载容器失败"
+other = "加载容器失败"
+
+[InvalidRequestPayload]
+description = "无效的请求数据"
+other = "无效的请求数据"
+
+[InvalidRequestPayloadWithErrorMessage]
+description = "无效的请求数据, 错误信息: {{.ErrorMessage}}"
+other = "无效的请求数据, 错误信息: {{.ErrorMessage}}"
+
+[YouHaveAlreadySolvedThisChallenge]
+description = "您已经解决了这道题目"
+other = "您已经解决了这道题目"
+
+[FailedToCheckSolveStatus]
+description = "检查解题状态失败"
+other = "检查解题状态失败"
+
+[FailedToGetTeamFlag]
+description = "获取队伍Flag失败"
+other = "获取队伍Flag失败"
+
+[InvalidJudgeID]
+description = "无效的判题ID"
+other = "无效的判题ID"
+
+[JudgeNotFound]
+description = "判题记录未找到"
+other = "判题记录未找到"
+
+[FailedToLoadJudge]
+description = "加载判题记录失败"
+other = "加载判题记录失败"
+
+# User Container Controller 错误信息
+
+[YouHaveCreatedContainerForChallenge]
+description = "您已经为此题目创建了容器"
+other = "您已经为此题目创建了容器"
+
+[YourContainerIsQueueing]
+description = "您的容器正在排队中"
+other = "您的容器正在排队中"
+
+[YouHaveCreatedTooManyContainers]
+description = "您创建的容器过多"
+other = "您创建的容器过多"
+
+[FlagHaventBeenCreatedYet]
+description = "Flag尚未创建，请稍等"
+other = "Flag尚未创建，请稍等"
+
+[LaunchContainerFirst]
+description = "容器不存在或启动失败, 请联系管理员"
+other = "容器不存在或启动失败, 请联系管理员"
+
+# User Controller 错误信息
+
+[UserNotFound]
+description = "用户未找到"
+other = "用户未找到"
+
+[UsernameOrEmailExists]
+description = "用户名或邮箱已注册"
+other = "用户名或邮箱已注册"
+
+[NewEmailSameAsOld]
+description = "新邮箱与旧邮箱相同"
+other = "新邮箱与旧邮箱相同"
+
+[EmailCannotBeUsed]
+description = "此邮箱不能使用"
+other = "此邮箱不能使用"
+
+[EmailAlreadyVerified]
+description = "邮箱已经验证过了"
+other = "邮箱已经验证过了"
+
+[PasswordNotStrongEnough]
+description = "密码强度不足"
+other = "密码强度不足"
+
+# User Game Controller 错误信息
+
+[FailedToLoadGames]
+description = "加载比赛失败"
+other = "加载比赛失败"
+
+[FailedToLoadTeamData]
+description = "加载队伍数据失败"
+other = "加载队伍数据失败"
+
+[FailedToLoadTeamMembers]
+description = "加载队伍成员失败"
+other = "加载队伍成员失败"
+
+[FailedToLoadNotices]
+description = "加载公告失败"
+other = "加载公告失败"
+
+[FailedToLoadGameChallengesBoard]
+description = "加载比赛题目失败"
+other = "加载比赛题目失败"
+
+[FailedToLoadGameScoreboard]
+description = "加载比赛排行榜失败"
+other = "加载比赛排行榜失败"
+
+[FailedToLoadGameGroups]
+description = "加载比赛分组失败"
+other = "加载比赛分组失败"
+
+[FailedToLoadFilteredScoreboard]
+description = "加载过滤排行榜失败"
+other = "加载过滤排行榜失败"
+
+# User Team Controller 错误信息
+
+[TeamNameAlreadyExists]
+description = "队伍名称已存在"
+other = "队伍名称已存在"
+
+[FailedToCheckTeamName]
+description = "检查队伍名称失败"
+other = "检查队伍名称失败"
+
+[InvalidGroupID]
+description = "无效的分组ID"
+other = "无效的分组ID"
+
+[FailedToValidateGroup]
+description = "验证分组失败"
+other = "验证分组失败"
+
+[InvalidInviteCode]
+description = "无效的邀请码"
+other = "无效的邀请码"
+
+[YouAreAlreadyMemberOfTeam]
+description = "您已经是此队伍的成员"
+other = "您已经是此队伍的成员"
+
+[YouAlreadyHavePendingRequest]
+description = "您已经有待处理的申请"
+other = "您已经有此队伍的待处理申请"
+
+[ApplicationSubmitted]
+description = "申请已提交"
+other = "申请已提交，等待队长审核"
+
+[FailedToLoadJoinRequests]
+description = "加载加入申请失败"
+other = "加载加入申请失败"
+
+[OnlyTeamCaptainCanViewRequests]
+description = "只有队长可以查看加入申请"
+other = "只有队长可以查看加入申请"
+
+[InvalidRequestID]
+description = "无效的申请ID"
+other = "无效的申请ID"
+
+[RequestNotFound]
+description = "申请未找到"
+other = "申请未找到"
+
+[InvalidAction]
+description = "无效的操作"
+other = "无效的操作"
+
+[RequestAlreadyProcessed]
+description = "申请已处理"
+other = "申请已处理"
+
+[OnlyTeamCaptainCanHandleRequests]
+description = "只有队长可以处理加入申请"
+other = "只有队长可以处理加入申请"
+
+[FailedToAddMemberToTeam]
+description = "添加成员到队伍失败"
+other = "添加成员到队伍失败"
+
+[FailedToUpdateRequestStatus]
+description = "更新申请状态失败"
+other = "更新申请状态失败"
+
+[TransactionFailed]
+description = "事务失败"
+other = "事务失败"
+
+[ApplicationProcessed]
+description = "申请已处理"
+other = "申请已处理"
+
+[RequestProcessed]
+description = "申请已处理"
+other = "申请已处理"
+
+[OnlyTeamCaptainCanTransferCaptaincy]
+description = "只有队长可以转移队长权限"
+other = "只有队长可以转移队长权限"
+
+[NewCaptainNotTeamMember]
+description = "新队长不是该队伍成员"
+other = "新队长不是该队伍成员"
+
+[TeamDeleted]
+description = "战队已解散"
+other = "战队已解散"
+
+[OnlyCurrentCaptainCanTransfer]
+description = "只有当前队长可以转移队长"
+other = "只有当前队长可以转移队长"
+
+[NewCaptainNotMemberOfTeam]
+description = "新队长不是此队伍成员"
+other = "新队长不是此队伍的成员"
+
+[FailedToTransferCaptaincy]
+description = "转移队长失败"
+other = "转移队长失败"
+
+[CaptainTransferred]
+description = "队长已转移"
+other = "队长已转移"
+
+[OnlyCaptainCanRemoveMembers]
+description = "只有队长可以移除成员"
+other = "只有队长可以移除成员"
+
+[CaptainCannotRemoveThemselves]
+description = "队长不能移除自己"
+other = "队长不能移除自己"
+
+[FailedToRemoveMember]
+description = "移除成员失败"
+other = "移除成员失败"
+
+[MemberRemoved]
+description = "队员已移除"
+other = "队员已移除"
+
+[OnlyCaptainCanDeleteTeam]
+description = "只有队长可以解散队伍"
+other = "只有队长可以解散队伍"
+
+[FailedToDeleteTeamJoinRequests]
+description = "删除队伍加入申请失败"
+other = "删除队伍加入申请失败"
+
+[FailedToDeleteTeam]
+description = "删除队伍失败"
+other = "删除队伍失败"
+
+[TeamDisbanded]
+description = "战队已解散"
+other = "战队已解散"
+
+[OnlyCaptainCanUpdateTeamInfo]
+description = "只有队长可以更新队伍信息"
+other = "只有队长可以更新队伍信息"
+
+[FailedToUpdateTeamInfo]
+description = "更新队伍信息失败"
+other = "更新队伍信息失败"
+
+[TeamInfoUpdated]
+description = "战队信息已更新"
+other = "战队信息已更新"
+
+[InvalidGameID]
+description = "无效的比赛ID"
+other = "无效的比赛ID"
+
+[TeamIsFull]
+description = "队伍成员已满"
+other = "队伍成员已满"
+
+# User Middlewares 错误信息
+
+[GameNotFound]
+description = "比赛未找到"
+other = "比赛未找到"
+
+[GameNotStartedYet]
+description = "比赛尚未开始"
+other = "比赛尚未开始"
+
+[GameHasEnded]
+description = "比赛已结束"
+other = "比赛已结束"
+
+[FailedToLoadTeams]
+description = "加载队伍失败"
+other = "加载队伍失败"
+
+[YouMustJoinTeamInThisGame]
+description = "您必须在此比赛中加入队伍"
+other = "您必须在此比赛中加入队伍"
+
+[YouAreBannedFromThisGame]
+description = "您被禁止参加此比赛"
+other = "您被禁止参加此比赛"
+
+[YouMustVerifyEmailFirst]
+description = "您必须先验证邮箱"
+other = "您必须先验证邮箱"
+
+[OperationNotAllowedAfterGameStart]
+description = "比赛开始后不允许此操作"
+other = "比赛开始后不允许此操作"
+
+[SendEmailTooFast]
+description = "邮件发送过快, 请等待一分钟"
+other = "邮件发送过快, 请等待一分钟"
+
+[RequestTooFast]
+description = "请求过快, 请 {{.Time}} 秒后重试"
+other = "请求过快, 请 {{.Time}} 秒后重试"
+
+[ContainerExpireTimeTooShort]
+description = "靶机剩余时间超过半小时, 不可延长"
+other = "靶机剩余时间超过半小时, 不可延长"
+
+[InVisibleDuetoStageOver]
+description = "当前阶段不可作答此题"
+other = "当前阶段不可作答此题"
+
+[FileAccessDenied]
+description = "文件访问被拒绝"
+other = "文件访问被拒绝"
+
+[TooManyRequests]
+description = "请求过多, 请稍后再试"
+other = "请求过多, 请稍后再试"
+
+[UserAlreadyInTeam]
+description = "用户已在其他队伍中"
+other = "用户已在其他队伍中"
+
+# Email SMTP 错误信息
+
+[SmtpConfigEmpty]
+description = "邮件SMTP配置为空，请联系管理员配置"
+other = "邮件SMTP配置为空，请联系管理员配置"
+
+[SmtpConfigError]
+description = "邮件SMTP配置错误，请联系管理员配置"
+other = "邮件SMTP配置错误，请联系管理员配置"
+
+[GroupInviteCodeRequired]
+description = "请输入分组邀请码"
+other = "请输入分组邀请码"
+
+[InvalidGroupInviteCode]
+description = "无效的分组邀请码"
+other = "无效的分组邀请码"
+
+[GroupInviteCodeNotEnabled]
+description = "当前比赛未启用分组邀请码"
+other = "当前比赛未启用分组邀请码"

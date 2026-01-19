@@ -1,0 +1,58 @@
+{
+    "username": "用户名",
+    "role": {
+        "title": "用户角色",
+        "admin": "管理员",
+        "monitor": "监控员",
+        "user": "用户",
+        "unknow": "未知"
+    },
+    "email": "邮箱",
+    "register_ip": "注册时的IP",
+    "last_ip": "上一次登录的IP",
+    "realname": "真实姓名",
+    "student_id": "学号",
+    "phone": "手机号",
+    "slogan": "个性签名",
+    "actions": {
+        "title": "操作",
+        "edit": "编辑",
+        "open": "打开菜单",
+        "copy": "复制用户ID",
+        "reset": "重置密码",
+        "delete": "删除用户",
+        "choose": "{{count}} 行已选择"
+    },
+    "search": {
+        "title": "请输入关键字进行用户搜索",
+        "description": "支持搜索 用户名、邮箱地址、个人资料信息、账号Slogan、用户ID、上一次登陆IP",
+        "row": "列显示",
+        "empty": "暂无数据"
+    },
+    "delete": {
+        "title": "确认删除",
+        "description": "确认要删除这个用户吗？此操作不可逆！",
+        "pending": "删除中...",
+        "success": "用户已删除",
+        "failed": "删除用户失败"
+    },
+    "reset": {
+        "title": "确认重置密码",
+        "description": "确认要重置这个用户的密码吗？",
+        "pending": "重置中...",
+        "success": "新密码: {{pwd}}，已复制到剪切板",
+        "error": "重置密码失败"
+    },
+    "edit": {
+        "name_error": "用户名至少需要2个字符",
+        "email_error": "请输入有效的邮箱地址",
+        "success": "用户信息更新成功",
+        "title": "编辑用户",
+        "default_name": "张三",
+        "username": "用户的登录名",
+        "slogan": "我爱CTF!",
+        "role": "请选择用户角色",
+        "role_description": "用户角色决定了用户的权限"
+    },
+    "save": "保存"
+}

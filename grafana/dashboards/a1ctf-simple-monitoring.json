@@ -1,0 +1,375 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "A1CTF简化系统监控 - CPU使用率和内存使用量",
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": null,
+  "links": [],
+  "panels": [
+    {
+      "title": "CPU使用情况",
+      "type": "row",
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 0},
+      "collapsed": false,
+      "id": 1
+    },
+    {
+      "title": "CPU核心数",
+      "type": "stat",
+      "gridPos": {"h": 6, "w": 8, "x": 0, "y": 1},
+      "id": 2,
+      "targets": [
+        {
+          "expr": "a1ctf_cpu_cores",
+          "interval": "",
+          "legendFormat": "CPU核心",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "value"},
+          "unit": "short",
+          "mappings": []
+        }
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "auto",
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto"
+      }
+    },
+    {
+      "title": "Goroutine数量 (CPU活跃度)",
+      "type": "stat",
+      "gridPos": {"h": 6, "w": 8, "x": 8, "y": 1},
+      "id": 3,
+      "targets": [
+        {
+          "expr": "a1ctf_goroutines",
+          "interval": "",
+          "legendFormat": "Goroutines",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 100},
+              {"color": "orange", "value": 500},
+              {"color": "red", "value": 1000}
+            ]
+          },
+          "unit": "short",
+          "mappings": []
+        }
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "auto",
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto"
+      }
+    },
+    {
+      "title": "Goroutine趋势",
+      "type": "timeseries",
+      "gridPos": {"h": 6, "w": 8, "x": 16, "y": 1},
+      "id": 4,
+      "targets": [
+        {
+          "expr": "a1ctf_goroutines",
+          "interval": "",
+          "legendFormat": "Goroutines",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "unit": "short",
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "linear",
+            "barAlignment": 0,
+            "lineWidth": 2,
+            "fillOpacity": 20,
+            "gradientMode": "none",
+            "spanNulls": false,
+            "insertNulls": false,
+            "showPoints": "never",
+            "pointSize": 5
+          }
+        }
+      },
+      "options": {
+        "tooltip": {"mode": "single", "sort": "none"},
+        "legend": {
+          "displayMode": "hidden"
+        }
+      }
+    },
+    {
+      "title": "内存使用情况",
+      "type": "row",
+      "gridPos": {"h": 1, "w": 24, "x": 0, "y": 7},
+      "collapsed": false,
+      "id": 5
+    },
+    {
+      "title": "内存使用率",
+      "type": "gauge",
+      "gridPos": {"h": 8, "w": 8, "x": 0, "y": 8},
+      "id": 6,
+      "targets": [
+        {
+          "expr": "a1ctf_memory_usage_percent",
+          "interval": "",
+          "legendFormat": "内存使用率",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "thresholds": {
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 60},
+              {"color": "orange", "value": 80},
+              {"color": "red", "value": 90}
+            ]
+          },
+          "unit": "percent",
+          "min": 0,
+          "max": 100,
+          "mappings": []
+        }
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "displayMode": "basic",
+        "showThresholdLabels": true,
+        "showThresholdMarkers": true
+      }
+    },
+    {
+      "title": "内存使用量",
+      "type": "stat",
+      "gridPos": {"h": 4, "w": 8, "x": 8, "y": 8},
+      "id": 7,
+      "targets": [
+        {
+          "expr": "a1ctf_memory_alloc_bytes",
+          "interval": "",
+          "legendFormat": "已分配内存",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "value"},
+          "unit": "bytes",
+          "mappings": []
+        }
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "auto",
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "auto"
+      }
+    },
+    {
+      "title": "系统总内存",
+      "type": "stat",
+      "gridPos": {"h": 4, "w": 8, "x": 8, "y": 12},
+      "id": 8,
+      "targets": [
+        {
+          "expr": "a1ctf_memory_sys_bytes",
+          "interval": "",
+          "legendFormat": "系统总内存",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "value"},
+          "unit": "bytes",
+          "mappings": []
+        }
+      },
+      "options": {
+        "reduceOptions": {
+          "values": false,
+          "calcs": ["lastNotNull"],
+          "fields": ""
+        },
+        "orientation": "auto",
+        "textMode": "auto",
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "auto"
+      }
+    },
+    {
+      "title": "内存使用趋势",
+      "type": "timeseries",
+      "gridPos": {"h": 8, "w": 8, "x": 16, "y": 8},
+      "id": 9,
+      "targets": [
+        {
+          "expr": "a1ctf_memory_alloc_bytes",
+          "interval": "",
+          "legendFormat": "已分配内存",
+          "refId": "A"
+        },
+        {
+          "expr": "a1ctf_memory_sys_bytes",
+          "interval": "",
+          "legendFormat": "系统总内存",
+          "refId": "B"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "unit": "bytes",
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "linear",
+            "barAlignment": 0,
+            "lineWidth": 2,
+            "fillOpacity": 10,
+            "gradientMode": "none",
+            "spanNulls": false,
+            "insertNulls": false,
+            "showPoints": "never",
+            "pointSize": 5
+          }
+        }
+      },
+      "options": {
+        "tooltip": {"mode": "multi", "sort": "none"},
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom",
+          "values": ["value", "max"]
+        }
+      }
+    },
+    {
+      "title": "内存使用率趋势",
+      "type": "timeseries",
+      "gridPos": {"h": 6, "w": 24, "x": 0, "y": 16},
+      "id": 10,
+      "targets": [
+        {
+          "expr": "a1ctf_memory_usage_percent",
+          "interval": "",
+          "legendFormat": "内存使用率 (%)",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "color": {"mode": "palette-classic"},
+          "unit": "percent",
+          "min": 0,
+          "max": 100,
+          "custom": {
+            "drawStyle": "line",
+            "lineInterpolation": "linear",
+            "barAlignment": 0,
+            "lineWidth": 2,
+            "fillOpacity": 20,
+            "gradientMode": "opacity",
+            "spanNulls": false,
+            "insertNulls": false,
+            "showPoints": "never",
+            "pointSize": 5
+          },
+          "thresholds": {
+            "steps": [
+              {"color": "green", "value": null},
+              {"color": "yellow", "value": 60},
+              {"color": "orange", "value": 80},
+              {"color": "red", "value": 90}
+            ]
+          }
+        }
+      },
+      "options": {
+        "tooltip": {"mode": "single", "sort": "none"},
+        "legend": {
+          "displayMode": "table",
+          "placement": "bottom",
+          "values": ["value", "max", "min"]
+        }
+      }
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 39,
+  "style": "dark",
+  "tags": ["a1ctf", "monitoring", "simple", "cpu", "memory"],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": ["5s", "10s", "30s", "1m", "5m", "15m", "30m", "1h", "2h", "1d"]
+  },
+  "timezone": "",
+  "title": "A1CTF简化系统监控",
+  "uid": "a1ctf-simple-monitoring",
+  "version": 1
+} 

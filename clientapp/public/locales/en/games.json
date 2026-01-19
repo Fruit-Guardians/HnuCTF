@@ -1,0 +1,11 @@
+{
+    "game_list": "Game list",
+    "game_status_running": "Running",
+    "game_status_ended": "Ended",
+    "game_status_pending": "Pending",
+    "game_status_unknow": "Unknow",
+    "game_nogame": "Oops, no game available.",
+    "game_join": "Join",
+    "game_nocontext": "None",
+    "game_maybe_click": "<- Maybe you can click this button to open the games sheet :)"
+}

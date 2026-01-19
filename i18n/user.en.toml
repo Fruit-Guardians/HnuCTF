@@ -1,0 +1,517 @@
+# JWT Auth Error Messages
+
+[JWTErrForbidden]
+description = "You don't have this permission"
+other = "You don't have this permission"
+
+[JWTErrInvalidSigningAlgorithm]
+description = "Invalid signing algorithm"
+other = "Invalid signing algorithm"
+
+[JWTErrMissingExpField]
+description = "Missing expire field"
+other = "Missing expire field"
+
+[JWTErrExpiredToken]
+description = "Token is expired"
+other = "Token is expired"
+
+[JWTErrWrongFormatOfExp]
+description = "Expire field must be float64 format"
+other = "Expire field must be float64 format"
+
+# File Controller Error Messages
+
+[NoFileUploaded]
+description = "No file uploaded"
+other = "No file uploaded"
+
+[FileTooLarge]
+description = "File too large"
+other = "File too large (max 50MB)"
+
+[FailedToCreateUploadDirectory]
+description = "Failed to create upload directory"
+other = "Failed to create upload directory"
+
+[FailedToSaveFile]
+description = "Failed to save file"
+other = "Failed to save file"
+
+[FailedToSaveFileRecord]
+description = "Failed to save file record"
+other = "Failed to save file record"
+
+[InvalidFileID]
+description = "Invalid file ID"
+other = "Invalid file ID"
+
+[FailedToLoadFilesMap]
+description = "Failed to load files map"
+other = "Failed to load files map"
+
+[FileNotFound]
+description = "File not found"
+other = "File not found"
+
+[FileNotFoundOnServer]
+description = "File not found on server"
+other = "File not found on server"
+
+[ErrorOpeningFile]
+description = "Error opening file"
+other = "Error opening file"
+
+[InvalidUserID]
+description = "Invalid user ID"
+other = "Invalid user ID"
+
+[NoAvatarFileUploaded]
+description = "No avatar file uploaded"
+other = "No avatar file uploaded"
+
+[UploadedFileIsNotImage]
+description = "Uploaded file is not an image"
+other = "Uploaded file is not an image"
+
+[DatabaseQueryFailed]
+description = "Database query failed"
+other = "Database query failed"
+
+[FailedToSaveAvatarFile]
+description = "Failed to save avatar file"
+other = "Failed to save avatar file"
+
+[FailedToUpdateUserAvatar]
+description = "Failed to update user avatar"
+other = "Failed to update user avatar"
+
+[FailedToCommitTransaction]
+description = "Failed to commit transaction"
+other = "Failed to commit transaction"
+
+[AvatarUploadedSuccessfully]
+description = "Avatar uploaded successfully"
+other = "Avatar uploaded successfully"
+
+[InvalidTeamID]
+description = "Invalid team ID"
+other = "Invalid team ID"
+
+[TeamNotFound]
+description = "Team not found"
+other = "Team not found"
+
+[UserIsNotMemberOfTeam]
+description = "User is not a member of this team"
+other = "User is not a member of this team"
+
+[FailedToUpdateTeamAvatar]
+description = "Failed to update team avatar"
+other = "Failed to update team avatar"
+
+[TeamAvatarUploadedSuccessfully]
+description = "Team avatar uploaded successfully"
+other = "Team avatar uploaded successfully"
+
+# User Challenge Controller Error Messages
+
+[FailedToLoadGameChallenges]
+description = "Failed to load game challenges"
+other = "Failed to load game challenges"
+
+[FailedToLoadSolves]
+description = "Failed to load solves"
+other = "Failed to load solves"
+
+[InvalidChallengeID]
+description = "Invalid challenge ID"
+other = "Invalid challenge ID"
+
+[FailedToCheckChallengeVisibility]
+description = "Failed to check challenge visibility"
+other = "Failed to check challenge visibility"
+
+[ChallengeNotFound]
+description = "Challenge not found"
+other = "Challenge not found"
+
+[FailedToLoadChallengeDetails]
+description = "Failed to load challenge details"
+other = "Failed to load challenge details"
+
+[SystemError]
+description = "System error"
+other = "System error"
+
+[FailedToLoadChallengeAttachments]
+description = "Failed to load challenge attachments"
+other = "Failed to load challenge attachments"
+
+[FailedToLoadChallengeHints]
+description = "Failed to load challenge hints"
+other = "Failed to load challenge hints"
+
+[FailedToLoadContainers]
+description = "Failed to load containers"
+other = "Failed to load containers"
+
+[InvalidRequestPayload]
+description = "Invalid request payload"
+other = "Invalid request payload"
+
+[InvalidRequestPayloadWithErrorMessage]
+description = "Invalid request payload with error message: {{.ErrorMessage}}"
+other = "Invalid request payload with error message: {{.ErrorMessage}}"
+
+[YouHaveAlreadySolvedThisChallenge]
+description = "You have already solved this challenge"
+other = "You have already solved this challenge"
+
+[FailedToCheckSolveStatus]
+description = "Failed to check solve status"
+other = "Failed to check solve status"
+
+[FailedToGetTeamFlag]
+description = "Failed to get team flag"
+other = "Failed to get team flag"
+
+[InvalidJudgeID]
+description = "Invalid judge ID"
+other = "Invalid judge ID"
+
+[JudgeNotFound]
+description = "Judge not found"
+other = "Judge not found"
+
+[FailedToLoadJudge]
+description = "Failed to load judge"
+other = "Failed to load judge"
+
+# User Container Controller Error Messages
+
+[YouHaveCreatedContainerForChallenge]
+description = "You have created a container for this challenge"
+other = "You have created a container for this challenge"
+
+[YourContainerIsQueueing]
+description = "Your container is queueing"
+other = "Your container is queueing"
+
+[YouHaveCreatedTooManyContainers]
+description = "You have created too many containers"
+other = "You have created too many containers"
+
+[FlagHaventBeenCreatedYet]
+description = "Flag haven't been created yet, please wait"
+other = "Flag haven't been created yet, please wait"
+
+[LaunchContainerFirst]
+description = "Container does't exists or failed to launch, please contact the administrator"
+other = "Container does't exists or failed to launch, please contact the administrator"
+
+# User Controller Error Messages
+
+[UserNotFound]
+description = "User not found"
+other = "User not found"
+
+[UsernameOrEmailExists]
+description = "Username or email has registered"
+other = "Username or email has registered"
+
+[NewEmailSameAsOld]
+description = "New email is the same as the old email"
+other = "New email is the same as the old email"
+
+[EmailCannotBeUsed]
+description = "This email can not be used"
+other = "This email can not be used"
+
+[EmailAlreadyVerified]
+description = "Email has already been verified"
+other = "Email has already been verified"
+
+[PasswordNotStrongEnough]
+description = "Password not strong enough"
+other = "Password not strong enough"
+
+# User Game Controller Error Messages
+
+[FailedToLoadGames]
+description = "Failed to load games"
+other = "Failed to load games"
+
+[FailedToLoadTeamData]
+description = "Failed to load team data"
+other = "Failed to load team data"
+
+[FailedToLoadTeamMembers]
+description = "Failed to load team members"
+other = "Failed to load team members"
+
+[FailedToLoadNotices]
+description = "Failed to load notices"
+other = "Failed to load notices"
+
+[FailedToLoadGameChallengesBoard]
+description = "Failed to load game challenges"
+other = "Failed to load game challenges"
+
+[FailedToLoadGameScoreboard]
+description = "Failed to load game scoreboard"
+other = "Failed to load game scoreboard"
+
+[FailedToLoadGameGroups]
+description = "Failed to load game groups"
+other = "Failed to load game groups"
+
+[FailedToLoadFilteredScoreboard]
+description = "Failed to load filtered scoreboard"
+other = "Failed to load filtered scoreboard"
+
+# User Team Controller Error Messages
+
+[TeamNameAlreadyExists]
+description = "Team name already exists"
+other = "Team name already exists"
+
+[FailedToCheckTeamName]
+description = "Failed to check team name"
+other = "Failed to check team name"
+
+[InvalidGroupID]
+description = "Invalid group ID"
+other = "Invalid group ID"
+
+[FailedToValidateGroup]
+description = "Failed to validate group"
+other = "Failed to validate group"
+
+[InvalidInviteCode]
+description = "Invalid invite code"
+other = "Invalid invite code"
+
+[YouAreAlreadyMemberOfTeam]
+description = "You are already a member of this team"
+other = "You are already a member of this team"
+
+[YouAlreadyHavePendingRequest]
+description = "You already have a pending request"
+other = "You already have a pending request for this team"
+
+[ApplicationSubmitted]
+description = "Application submitted"
+other = "Application submitted, waiting for captain review"
+
+[FailedToLoadJoinRequests]
+description = "Failed to load join requests"
+other = "Failed to load join requests"
+
+[OnlyTeamCaptainCanViewRequests]
+description = "Only team captain can view join requests"
+other = "Only team captain can view join requests"
+
+[InvalidRequestID]
+description = "Invalid request ID"
+other = "Invalid request ID"
+
+[RequestNotFound]
+description = "Request not found"
+other = "Request not found"
+
+[InvalidAction]
+description = "Invalid action"
+other = "Invalid action"
+
+[RequestAlreadyProcessed]
+description = "Request already processed"
+other = "Request already processed"
+
+[OnlyTeamCaptainCanHandleRequests]
+description = "Only team captain can handle join requests"
+other = "Only team captain can handle join requests"
+
+[FailedToAddMemberToTeam]
+description = "Failed to add member to team"
+other = "Failed to add member to team"
+
+[FailedToUpdateRequestStatus]
+description = "Failed to update request status"
+other = "Failed to update request status"
+
+[TransactionFailed]
+description = "Transaction failed"
+other = "Transaction failed"
+
+[ApplicationProcessed]
+description = "Application processed"
+other = "Application processed"
+
+[OnlyCurrentCaptainCanTransfer]
+description = "Only current captain can transfer captaincy"
+other = "Only current captain can transfer captaincy"
+
+[NewCaptainNotMemberOfTeam]
+description = "New captain is not a member of this team"
+other = "New captain is not a member of this team"
+
+[OnlyTeamCaptainCanRemoveMembers]
+description = "Only captain can remove members"
+other = "Only captain can remove members"
+
+[OnlyTeamCaptainCanDeleteTeam]
+description = "Only captain can delete the team"
+other = "Only captain can delete the team"
+
+[OnlyTeamCaptainCanUpdateTeamInfo]
+description = "Only captain can update team info"
+other = "Only captain can update team info"
+
+[TeamDeleted]
+description = "Team deleted"
+other = "Team deleted"
+
+[FailedToTransferCaptaincy]
+description = "Failed to transfer captaincy"
+other = "Failed to transfer captaincy"
+
+[CaptainTransferred]
+description = "Captain transferred"
+other = "Captain transferred"
+
+[OnlyCaptainCanRemoveMembers]
+description = "Only captain can remove members"
+other = "Only captain can remove members"
+
+[CaptainCannotRemoveThemselves]
+description = "Captain cannot remove themselves"
+other = "Captain cannot remove themselves"
+
+[FailedToRemoveMember]
+description = "Failed to remove member"
+other = "Failed to remove member"
+
+[MemberRemoved]
+description = "Member removed"
+other = "Member removed"
+
+[OnlyCaptainCanDeleteTeam]
+description = "Only captain can delete the team"
+other = "Only captain can delete the team"
+
+[FailedToDeleteTeamJoinRequests]
+description = "Failed to delete team join requests"
+other = "Failed to delete team join requests"
+
+[FailedToDeleteTeam]
+description = "Failed to delete team"
+other = "Failed to delete team"
+
+[TeamDisbanded]
+description = "Team disbanded"
+other = "Team disbanded"
+
+[OnlyCaptainCanUpdateTeamInfo]
+description = "Only captain can update team info"
+other = "Only captain can update team info"
+
+[FailedToUpdateTeamInfo]
+description = "Failed to update team info"
+other = "Failed to update team info"
+
+[TeamInfoUpdated]
+description = "Team info updated"
+other = "Team info updated"
+
+[InvalidGameID]
+description = "Invalid game ID"
+other = "Invalid game ID"
+
+[TeamIsFull]
+description = "Team is full"
+other = "Team is full"
+
+# User Middlewares Error Messages
+
+[GameNotFound]
+description = "Game not found"
+other = "Game not found"
+
+[GameNotStartedYet]
+description = "Game not started yet"
+other = "Game not started yet"
+
+[GameHasEnded]
+description = "Game has ended"
+other = "Game has ended"
+
+[FailedToLoadTeams]
+description = "Failed to load teams"
+other = "Failed to load teams"
+
+[YouMustJoinTeamInThisGame]
+description = "You must join a team in this game"
+other = "You must join a team in this game"
+
+[YouAreBannedFromThisGame]
+description = "You are banned from this game"
+other = "You are banned from this game"
+
+[YouMustVerifyEmailFirst]
+description = "You must verify your email first"
+other = "You must verify your email first"
+
+[OperationNotAllowedAfterGameStart]
+description = "Operation not allowed after game start"
+other = "Operation not allowed after game start"
+
+[SendEmailTooFast]
+description = "Email send too fast, wait for a minute"
+other = "Email send too fast, wait for a minute"
+
+[RequestTooFast]
+description = "Request too fast, try again after {{.Time}} seconds"
+other = "Request too fast, try again after {{.Time}} seconds"
+
+[ContainerExpireTimeTooShort]
+description = "Container's expiration time too short, cannot extend"
+other = "Container's expiration time too short, cannot extend"
+
+[InVisibleDuetoStageOver]
+description = "Challenge is not visible due to stage over"
+other = "Challenge is not visible due to stage over"
+
+[FileAccessDenied]
+description = "File access denied"
+other = "File access denied"
+
+[TooManyRequests]
+description = "Too many requests, please try again later"
+other = "Too many requests, please try again later"
+
+[UserAlreadyInTeam]
+description = "User is already in another team"
+other = "User is already in another team"
+
+# Email SMTP 错误信息
+
+[SmtpConfigEmpty]
+description = "Email SMTP config is empty, please contact admin"
+other = "Email SMTP config is empty, please contact admin"
+
+[SmtpConfigError]
+description = "Email SMTP conig error, please contact admin"
+other = "Email SMTP conig error, please contact admin"
+
+[GroupInviteCodeRequired]
+description = "Group invite code is required"
+other = "Group invite code is required"
+    
+[InvalidGroupInviteCode]
+description = "Invalid group invite code"
+other = "Invalid group invite code"
+
+[GroupInviteCodeNotEnabled]
+description = "Group invite code is not enabled for this game"
+other = "Group invite code is not enabled for this game"

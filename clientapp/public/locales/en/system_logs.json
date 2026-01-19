@@ -1,0 +1,8 @@
+{
+    "CONTAINER_STOPPED": "Container stopped",
+    "STOP_CONTAINER": "Stop container",
+    "CONTAINER_STARTED": "Container started",
+    "SUBMIT_FLAG": "Submit flag",
+    "START_CONTAINER": "Start container",
+    "LOGIN_SUCCESS": "Login successful"
+}

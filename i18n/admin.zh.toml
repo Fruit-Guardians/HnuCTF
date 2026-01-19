@@ -1,0 +1,557 @@
+# JWT Auth 错误信息
+
+[JWTErrForbidden]
+description = "您没有此操作的权限"
+other = "您没有此操作的权限"
+
+[JWTErrInvalidSigningAlgorithm]
+description = "签名算法无效"
+other = "签名算法无效"
+
+[JWTErrMissingExpField]
+description = "缺少过期时间"
+other = "缺少过期时间"
+
+[JWTErrExpiredToken]
+description = "Token已过期"
+other = "Token已过期"
+
+[JWTErrWrongFormatOfExp]
+description = "过期时间必须是float64格式"
+other = "过期时间必须是float64格式"
+
+# Admin Challenge Controller 错误信息
+
+[InvalidChallengeID]
+description = "无效的题目 ID"
+other = "无效的题目 ID"
+
+[ChallengeNotFound]
+description = "题目未找到"
+other = "题目未找到"
+
+[ChallengeAlreadyAddedToGame]
+description = "题目已经在比赛里了"
+other = "题目已经在比赛里了"
+
+[FailedToLoadChallenge]
+description = "加载题目失败"
+other = "加载题目失败"
+
+[FailedToLoadChallenges]
+description = "加载题目列表失败"
+other = "加载题目列表失败"
+
+[FailedToCreateChallenge]
+description = "创建题目失败"
+other = "创建题目失败"
+
+[FailedToCreateWithoutContainer]
+description = "动态Flag需配置容器信息"
+other = "动态Flag需配置容器信息"
+
+[InvalidFlagTemplate]
+description = "Flag模板至少有3个字符"
+other = "Flag模板至少有3个字符"
+
+[FailedToDeleteChallenge]
+description = "删除题目失败"
+other = "删除题目失败"
+
+[ChallengeUsedInGame]
+description = "题目正在比赛中使用"
+other = "此题目正在比赛中使用"
+
+[ChallengeDeleted]
+description = "题目已删除"
+other = "题目已删除"
+
+[FailedToUpdateChallenge]
+description = "更新题目失败"
+other = "更新题目失败"
+
+[InvalidRequestPayload]
+description = "无效的请求数据"
+other = "无效的请求数据"
+
+[Updated]
+description = "已更新"
+other = "已更新"
+
+[FailedToLoadSolves]
+description = "加载解题记录失败"
+other = "加载解题记录失败"
+
+# Admin Container Controller 错误信息
+
+[FailedToLoadContainers]
+description = "获取容器列表失败"
+other = "获取容器列表失败"
+
+[FailedToLoadTeams]
+description = "获取团队信息失败"
+other = "获取团队信息失败"
+
+[FailedToLoadGames]
+description = "获取比赛信息失败"
+other = "获取比赛信息失败"
+
+[ContainerNotFound]
+description = "容器不存在"
+other = "容器不存在"
+
+[FailedToQueryContainer]
+description = "查询容器失败"
+other = "查询容器失败"
+
+[FailedToDeleteContainer]
+description = "删除容器失败"
+other = "删除容器失败"
+
+[FailedToCommitTransaction]
+description = "提交事务失败"
+other = "提交事务失败"
+
+[ContainerDeleted]
+description = "容器已删除"
+other = "容器已删除"
+
+[FailedToUpdateContainerExpireTime]
+description = "更新容器过期时间失败"
+other = "更新容器过期时间失败"
+
+[ContainerLifetimeExtended]
+description = "容器生命周期已延长"
+other = "容器生命周期已延长"
+
+[ContainerIDRequired]
+description = "容器ID不能为空"
+other = "容器ID不能为空"
+
+[FlagNotFound]
+description = "Flag不存在"
+other = "Flag不存在"
+
+[FailedToQueryFlag]
+description = "查询Flag失败"
+other = "查询Flag失败"
+
+# Admin Game Controller 错误信息
+
+[InvalidGameID]
+description = "无效的比赛 ID"
+other = "无效的比赛 ID"
+
+[GameNotFound]
+description = "比赛未找到"
+other = "比赛未找到"
+
+[FailedToLoadGame]
+description = "加载比赛失败"
+other = "加载比赛失败"
+
+[FailedToCreateGame]
+description = "创建比赛失败"
+other = "创建比赛失败"
+
+[FailedToCreateAdminTeam]
+description = "创建管理员队伍失败"
+other = "创建管理员队伍失败"
+
+[FailedToLoadGameChallenge]
+description = "加载比赛题目失败"
+other = "加载比赛题目失败"
+
+[FailedToLoadExistingChallenge]
+description = "加载现有题目失败"
+other = "加载现有题目失败"
+
+[FailedToSaveChallenge]
+description = "保存题目失败"
+other = "保存题目失败"
+
+[FailedToSaveGame]
+description = "保存比赛失败"
+other = "保存比赛失败"
+
+[FailedToVerifyGame]
+description = "验证比赛失败"
+other = "验证比赛失败"
+
+[FailedToVerifyChallenge]
+description = "验证题目失败"
+other = "验证题目失败"
+
+[ServerError]
+description = "服务器错误"
+other = "服务器错误"
+
+[ChallengeAlreadyAdded]
+description = "题目已添加到比赛"
+other = "题目已添加到比赛"
+
+[FailedToAddChallengeToGame]
+description = "添加题目到比赛失败"
+other = "添加题目到比赛失败"
+
+[AnnouncementCreatedSuccessfully]
+description = "公告创建成功"
+other = "公告创建成功"
+
+[FailedToLoadNotices]
+description = "加载公告失败"
+other = "加载公告失败"
+
+[FailedToCountNotices]
+description = "统计公告数量失败"
+other = "统计公告数量失败"
+
+[NoticeNotFound]
+description = "公告未找到"
+other = "公告未找到"
+
+[FailedToVerifyNotice]
+description = "验证公告失败"
+other = "验证公告失败"
+
+[AnnouncementDeletedSuccessfully]
+description = "公告删除成功"
+other = "公告删除成功"
+
+[NoPosterFileUploaded]
+description = "未上传海报文件"
+other = "未上传海报文件"
+
+[UploadedFileIsNotImage]
+description = "上传的文件不是图片"
+other = "上传的文件不是图片"
+
+[DatabaseQueryFailed]
+description = "数据库查询失败"
+other = "数据库查询失败"
+
+[FailedToCreateUploadDirectory]
+description = "创建上传目录失败"
+other = "创建上传目录失败"
+
+[FailedToSavePosterFile]
+description = "保存海报文件失败"
+other = "保存海报文件失败"
+
+[FailedToSaveFileRecord]
+description = "保存文件记录失败"
+other = "保存文件记录失败"
+
+[FailedToUpdateGamePoster]
+description = "更新比赛海报失败"
+other = "更新比赛海报失败"
+
+[GamePosterUploadedSuccessfully]
+description = "比赛海报上传成功"
+other = "比赛海报上传成功"
+
+[FailedToLoadScoreAdjustments]
+description = "加载分数调整失败"
+other = "加载分数调整失败"
+
+[TeamNotFoundInThisGame]
+description = "在此比赛中未找到队伍"
+other = "在此比赛中未找到队伍"
+
+[FailedToCreateScoreAdjustment]
+description = "创建分数调整失败"
+other = "创建分数调整失败"
+
+[FailedToLoadCreatedAdjustment]
+description = "加载创建的调整失败"
+other = "加载创建的调整失败"
+
+[InvalidAdjustmentID]
+description = "无效的调整 ID"
+other = "无效的调整 ID"
+
+[InvalidTeamID]
+description = "无效的队伍 ID"
+other = "无效的队伍 ID"
+
+[ScoreAdjustmentNotFound]
+description = "分数调整未找到"
+other = "分数调整未找到"
+
+[FailedToLoadScoreAdjustment]
+description = "加载分数调整失败"
+other = "加载分数调整失败"
+
+[FailedToUpdateScoreAdjustment]
+description = "更新分数调整失败"
+other = "更新分数调整失败"
+
+[FailedToLoadUpdatedAdjustment]
+description = "加载更新的调整失败"
+other = "加载更新的调整失败"
+
+[FailedToDeleteScoreAdjustment]
+description = "删除分数调整失败"
+other = "删除分数调整失败"
+
+[ScoreAdjustmentDeletedSuccessfully]
+description = "分数调整删除成功"
+other = "分数调整删除成功"
+
+[GameChallengeNotFound]
+description = "比赛题目未找到"
+other = "比赛题目未找到"
+
+[NoSolveRecordsFound]
+description = "未找到解题记录"
+other = "未找到解题记录"
+
+[NoSolveRecordsFoundForTeamAndChallenge]
+description = "未找到此队伍和题目的解题记录"
+other = "未找到此队伍和题目的解题记录"
+
+[DeletedSolveRecordsForTeam]
+description = "已删除队伍 {{.TeamName}} 的 {{.Count}} 条解题记录"
+other = "已删除队伍 {{.TeamName}} 的 {{.Count}} 条解题记录"
+
+[ClearedSolveRecords]
+description = "已清除 {{.Count}} 条解题记录"
+other = "已清除 {{.Count}} 条解题记录"
+
+[FailedToCountSubmits]
+description = "统计提交记录失败"
+other = "统计提交记录失败"
+
+[FailedToLoadSubmits]
+description = "加载提交记录失败"
+other = "加载提交记录失败"
+
+[FailedToCountCheats]
+description = "统计作弊记录失败"
+other = "统计作弊记录失败"
+
+[FailedToLoadCheats]
+description = "加载作弊记录失败"
+other = "加载作弊记录失败"
+
+# Admin Game Group Controller 错误信息
+
+[InvalidGroupID]
+description = "无效的分组 ID"
+other = "无效的分组 ID"
+
+[FailedToLoadGameGroups]
+description = "加载比赛分组失败"
+other = "加载比赛分组失败"
+
+[GroupNameAlreadyExists]
+description = "分组名称已存在"
+other = "分组名称已存在"
+
+[FailedToCreateGroup]
+description = "创建分组失败"
+other = "创建分组失败"
+
+[GroupNotFound]
+description = "分组未找到"
+other = "分组未找到"
+
+[FailedToLoadGroup]
+description = "加载分组失败"
+other = "加载分组失败"
+
+[FailedToUpdateGroup]
+description = "更新分组失败"
+other = "更新分组失败"
+
+[GroupUpdatedSuccessfully]
+description = "分组更新成功"
+other = "分组更新成功"
+
+[FailedToCheckTeamsInGroup]
+description = "检查分组中的队伍失败"
+other = "检查分组中的队伍失败"
+
+[CannotDeleteGroupWithTeams]
+description = "无法删除包含队伍的分组"
+other = "无法删除包含队伍的分组"
+
+[FailedToDeleteGroup]
+description = "删除分组失败"
+other = "删除分组失败"
+
+[GroupDeletedSuccessfully]
+description = "分组删除成功"
+other = "分组删除成功"
+
+# Admin System Controller 错误信息
+
+[FileUploadFailed]
+description = "文件上传失败"
+other = "文件上传失败: {{.Error}}"
+
+[InvalidResourceType]
+description = "无效的资源类型"
+other = "无效的资源类型"
+
+[UnsupportedFileType]
+description = "不支持的文件类型"
+other = "不支持的文件类型"
+
+[FailedToSaveFile]
+description = "保存文件失败"
+other = "保存文件失败: {{.Error}}"
+
+[FailedToSaveSystemSettings]
+description = "保存系统设置失败"
+other = "保存系统设置失败: {{.Error}}"
+
+[SystemSettingsUpdated]
+description = "系统设置已更新"
+other = "系统设置已更新"
+
+[FailedToQuerySystemLogs]
+description = "查询系统日志失败"
+other = "查询系统日志失败: {{.Error}}"
+
+# Admin Team Controller 错误信息
+
+[FailedToFetchTeams]
+description = "获取队伍列表失败"
+other = "获取队伍列表失败"
+
+[FailedToCountTeams]
+description = "统计队伍数量失败"
+other = "统计队伍数量失败"
+
+[FailedToFetchUsers]
+description = "获取用户信息失败"
+other = "获取用户信息失败"
+
+[TeamNotFound]
+description = "队伍未找到"
+other = "队伍未找到"
+
+[DatabaseError]
+description = "数据库错误"
+other = "数据库错误"
+
+[FailedToApproveTeam]
+description = "批准队伍失败"
+other = "批准队伍失败"
+
+[TeamApproved]
+description = "队伍已批准"
+other = "队伍已批准"
+
+[FailedToBanTeam]
+description = "禁赛队伍失败"
+other = "禁赛队伍失败"
+
+[CannotBanAdminTeam]
+description = "管理员队伍无法被禁赛"
+other = "管理员队伍无法被禁赛"
+
+[TeamBanned]
+description = "队伍已锁定"
+other = "队伍已锁定"
+
+[TeamIsNotBanned]
+description = "队伍未被禁赛"
+other = "队伍未被禁赛"
+
+[FailedToUnbanTeam]
+description = "解禁队伍失败"
+other = "解禁队伍失败"
+
+[TeamUnbanned]
+description = "队伍已解锁"
+other = "队伍已解锁"
+
+[FailedToDeleteTeamJoinRequests]
+description = "删除队伍加入申请失败"
+other = "删除队伍加入申请失败"
+
+[FailedToDeleteTeam]
+description = "删除队伍失败"
+other = "删除队伍失败"
+
+[CannotDeleteAdminTeam]
+description = "管理员队伍无法被删除"
+other = "管理员队伍无法被删除"
+
+[TransactionFailed]
+description = "事务失败"
+other = "事务失败"
+
+[TeamDeleted]
+description = "队伍已删除"
+other = "队伍已删除"
+
+# Admin User Controller 错误信息
+
+[FailedToCountUsers]
+description = "统计用户数量失败"
+other = "统计用户数量失败"
+
+[InvalidRequestParameters]
+description = "无效的请求参数"
+other = "无效的请求参数"
+
+[UserNotFound]
+description = "未找到用户"
+other = "未找到用户"
+
+[FailedToQueryUser]
+description = "查询用户失败"
+other = "查询用户失败"
+
+[FailedToUpdateUserInfo]
+description = "更新用户信息失败"
+other = "更新用户信息失败"
+
+[UserInfoUpdated]
+description = "用户信息已更新"
+other = "用户信息已更新"
+
+[FailedToResetPassword]
+description = "重置密码失败"
+other = "重置密码失败"
+
+[OldPasswordIncorrect]
+description = "旧密码错误"
+other = "旧密码错误"
+
+[PasswordReset]
+description = "密码已重置"
+other = "密码已重置"
+
+[FailedToDeleteUser]
+description = "删除用户失败"
+other = "删除用户失败"
+
+[UserDeleted]
+description = "用户已删除"
+other = "用户已删除"
+
+[UpdateAdminRoleNotAllowed]
+description = "您无权更改管理员角色"
+other = "您无权更改管理员角色"
+
+[DeleteAdminNotAllowed]
+description = "您无权删除管理员用户"
+other = "您无权删除管理员用户"
+
+# Admin Container 错误信息
+
+[InvalidContainer]
+description = "无效的 Pod Name 或 Container Name"
+other = "无效的 Pod Name 或 Container Name"
+
+[FailedToDeleteGame]
+description = "删除比赛失败"
+other = "删除比赛失败"
+
+[GameDeletedSuccessfully]
+description = "比赛删除成功"
+other = "比赛删除成功"

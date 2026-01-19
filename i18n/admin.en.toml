@@ -1,0 +1,557 @@
+# JWT Auth Error Messages
+
+[JWTErrForbidden]
+description = "You don't have this permission"
+other = "You don't have this permission"
+
+[JWTErrInvalidSigningAlgorithm]
+description = "Invalid signing algorithm"
+other = "Invalid signing algorithm"
+
+[JWTErrMissingExpField]
+description = "Missing expire field"
+other = "Missing expire field"
+
+[JWTErrExpiredToken]
+description = "Token is expired"
+other = "Token is expired"
+
+[JWTErrWrongFormatOfExp]
+description = "Expire field must be float64 format"
+other = "Expire field must be float64 format"
+
+# Admin Challenge Controller Error Messages
+
+[InvalidChallengeID]
+description = "Invalid challenge ID"
+other = "Invalid challenge ID"
+
+[ChallengeNotFound]
+description = "Challenge not found"
+other = "Challenge not found"
+
+[ChallengeAlreadyAddedToGame]
+description = "Challenge has already added to the game"
+other = "Challenge has already added to the game"
+
+[FailedToLoadChallenge]
+description = "Failed to load challenge"
+other = "Failed to load challenge"
+
+[FailedToLoadChallenges]
+description = "Failed to load challenges"
+other = "Failed to load challenges"
+
+[FailedToCreateChallenge]
+description = "Failed to create challenge"
+other = "Failed to create challenge"
+
+[FailedToCreateWithoutContainer]
+description = "Dynamic Flag requires container"
+other = "Dynamic Flag requires container"
+
+[InvalidFlagTemplate]
+description = "Flag must be at least 3 characters long"
+other = "Flag must be at least 3 characters long"
+
+[FailedToDeleteChallenge]
+description = "Failed to delete challenge"
+other = "Failed to delete challenge"
+
+[ChallengeUsedInGame]
+description = "Challenge is used in game"
+other = "This challenge is used in game"
+
+[ChallengeDeleted]
+description = "Challenge deleted"
+other = "Challenge deleted"
+
+[FailedToUpdateChallenge]
+description = "Failed to update challenge"
+other = "Failed to update challenge"
+
+[OldPasswordIncorrect]
+description = "Old password incorrect"
+other = "Old password incorrect"
+
+[InvalidRequestPayload]
+description = "Invalid request payload"
+other = "Invalid request payload"
+
+[Updated]
+description = "Updated"
+other = "Updated"
+
+[FailedToLoadSolves]
+description = "Failed to load solves"
+other = "Failed to load solves"
+
+# Admin Container Controller Error Messages
+
+[FailedToLoadContainers]
+description = "Failed to load container list"
+other = "Failed to load container list"
+
+[FailedToLoadTeams]
+description = "Failed to load team information"
+other = "Failed to load team information"
+
+[FailedToLoadGames]
+description = "Failed to load game information"
+other = "Failed to load game information"
+
+[ContainerNotFound]
+description = "Container not found"
+other = "Container not found"
+
+[FailedToQueryContainer]
+description = "Failed to query container"
+other = "Failed to query container"
+
+[FailedToDeleteContainer]
+description = "Failed to delete container"
+other = "Failed to delete container"
+
+[FailedToCommitTransaction]
+description = "Failed to commit transaction"
+other = "Failed to commit transaction"
+
+[ContainerDeleted]
+description = "Container deleted"
+other = "Container deleted"
+
+[FailedToUpdateContainerExpireTime]
+description = "Failed to update container's expiration time"
+other = "Failed to update container's expiration time"
+
+[ContainerLifetimeExtended]
+description = "Container lifetime extended"
+other = "Container lifetime extended"
+
+[ContainerIDRequired]
+description = "Container ID is required"
+other = "Container ID is required"
+
+[FlagNotFound]
+description = "Flag not found"
+other = "Flag not found"
+
+[FailedToQueryFlag]
+description = "Failed to query flag"
+other = "Failed to query flag"
+
+# Admin Game Controller Error Messages
+
+[InvalidGameID]
+description = "Invalid game ID"
+other = "Invalid game ID"
+
+[GameNotFound]
+description = "Game not found"
+other = "Game not found"
+
+[FailedToLoadGame]
+description = "Failed to load game"
+other = "Failed to load game"
+
+[FailedToCreateGame]
+description = "Failed to create game"
+other = "Failed to create game"
+
+[FailedToCreateAdminTeam]
+description = "Failed to create admin team"
+other = "Failed to create admin team"
+
+[FailedToLoadGameChallenge]
+description = "Failed to load game challenge"
+other = "Failed to load game challenge"
+
+[FailedToLoadExistingChallenge]
+description = "Failed to load existing challenge"
+other = "Failed to load existing challenge"
+
+[FailedToSaveChallenge]
+description = "Failed to save challenge"
+other = "Failed to save challenge"
+
+[FailedToSaveGame]
+description = "Failed to save game"
+other = "Failed to save game"
+
+[FailedToVerifyGame]
+description = "Failed to verify game"
+other = "Failed to verify game"
+
+[FailedToVerifyChallenge]
+description = "Failed to verify challenge"
+other = "Failed to verify challenge"
+
+[ServerError]
+description = "Server error"
+other = "Server error"
+
+[ChallengeAlreadyAdded]
+description = "Challenge already added to game"
+other = "Challenge already added to game"
+
+[FailedToAddChallengeToGame]
+description = "Failed to add challenge to game"
+other = "Failed to add challenge to game"
+
+[AnnouncementCreatedSuccessfully]
+description = "Announcement created successfully"
+other = "Announcement created successfully"
+
+[FailedToLoadNotices]
+description = "Failed to load notices"
+other = "Failed to load notices"
+
+[FailedToCountNotices]
+description = "Failed to count notices"
+other = "Failed to count notices"
+
+[NoticeNotFound]
+description = "Notice not found"
+other = "Notice not found"
+
+[FailedToVerifyNotice]
+description = "Failed to verify notice"
+other = "Failed to verify notice"
+
+[AnnouncementDeletedSuccessfully]
+description = "Announcement deleted successfully"
+other = "Announcement deleted successfully"
+
+[NoPosterFileUploaded]
+description = "No poster file uploaded"
+other = "No poster file uploaded"
+
+[UploadedFileIsNotImage]
+description = "Uploaded file is not an image"
+other = "Uploaded file is not an image"
+
+[DatabaseQueryFailed]
+description = "Database query failed"
+other = "Database query failed"
+
+[FailedToCreateUploadDirectory]
+description = "Failed to create upload directory"
+other = "Failed to create upload directory"
+
+[FailedToSavePosterFile]
+description = "Failed to save poster file"
+other = "Failed to save poster file"
+
+[FailedToSaveFileRecord]
+description = "Failed to save file record"
+other = "Failed to save file record"
+
+[FailedToUpdateGamePoster]
+description = "Failed to update game poster"
+other = "Failed to update game poster"
+
+[GamePosterUploadedSuccessfully]
+description = "Game poster uploaded successfully"
+other = "Game poster uploaded successfully"
+
+[FailedToLoadScoreAdjustments]
+description = "Failed to load score adjustments"
+other = "Failed to load score adjustments"
+
+[TeamNotFoundInThisGame]
+description = "Team not found in this game"
+other = "Team not found in this game"
+
+[FailedToCreateScoreAdjustment]
+description = "Failed to create score adjustment"
+other = "Failed to create score adjustment"
+
+[FailedToLoadCreatedAdjustment]
+description = "Failed to load created adjustment"
+other = "Failed to load created adjustment"
+
+[InvalidAdjustmentID]
+description = "Invalid adjustment ID"
+other = "Invalid adjustment ID"
+
+[ScoreAdjustmentNotFound]
+description = "Score adjustment not found"
+other = "Score adjustment not found"
+
+[FailedToLoadScoreAdjustment]
+description = "Failed to load score adjustment"
+other = "Failed to load score adjustment"
+
+[FailedToUpdateScoreAdjustment]
+description = "Failed to update score adjustment"
+other = "Failed to update score adjustment"
+
+[FailedToLoadUpdatedAdjustment]
+description = "Failed to load updated adjustment"
+other = "Failed to load updated adjustment"
+
+[FailedToDeleteScoreAdjustment]
+description = "Failed to delete score adjustment"
+other = "Failed to delete score adjustment"
+
+[ScoreAdjustmentDeletedSuccessfully]
+description = "Score adjustment deleted successfully"
+other = "Score adjustment deleted successfully"
+
+[GameChallengeNotFound]
+description = "Game challenge not found"
+other = "Game challenge not found"
+
+[NoSolveRecordsFound]
+description = "No solve records found"
+other = "No solve records found"
+
+[NoSolveRecordsFoundForTeamAndChallenge]
+description = "No solve records found for this team and challenge"
+other = "No solve records found for this team and challenge"
+
+[DeletedSolveRecordsForTeam]
+description = "Deleted {{.Count}} solve records for team {{.TeamName}}"
+other = "Deleted {{.Count}} solve records for team {{.TeamName}}"
+
+[ClearedSolveRecords]
+description = "Cleared {{.Count}} solve records"
+other = "Cleared {{.Count}} solve records"
+
+[FailedToCountSubmits]
+description = "Failed to count submits"
+other = "Failed to count submits"
+
+[FailedToLoadSubmits]
+description = "Failed to load submits"
+other = "Failed to load submits"
+
+[FailedToCountCheats]
+description = "Failed to count cheats"
+other = "Failed to count cheats"
+
+[FailedToLoadCheats]
+description = "Failed to load cheats"
+other = "Failed to load cheats"
+
+# Admin Game Group Controller Error Messages
+
+[InvalidGroupID]
+description = "Invalid group ID"
+other = "Invalid group ID"
+
+[FailedToLoadGameGroups]
+description = "Failed to load game groups"
+other = "Failed to load game groups"
+
+[GroupNameAlreadyExists]
+description = "Group name already exists"
+other = "Group name already exists"
+
+[FailedToCreateGroup]
+description = "Failed to create group"
+other = "Failed to create group"
+
+[GroupNotFound]
+description = "Group not found"
+other = "Group not found"
+
+[FailedToLoadGroup]
+description = "Failed to load group"
+other = "Failed to load group"
+
+[FailedToUpdateGroup]
+description = "Failed to update group"
+other = "Failed to update group"
+
+[GroupUpdatedSuccessfully]
+description = "Group updated successfully"
+other = "Group updated successfully"
+
+[FailedToCheckTeamsInGroup]
+description = "Failed to check teams in group"
+other = "Failed to check teams in group"
+
+[CannotDeleteGroupWithTeams]
+description = "Cannot delete group with teams in it"
+other = "Cannot delete group with teams in it"
+
+[FailedToDeleteGroup]
+description = "Failed to delete group"
+other = "Failed to delete group"
+
+[GroupDeletedSuccessfully]
+description = "Group deleted successfully"
+other = "Group deleted successfully"
+
+# Admin System Controller Error Messages
+
+[FileUploadFailed]
+description = "File upload failed"
+other = "File upload failed: {{.Error}}"
+
+[InvalidResourceType]
+description = "Invalid resource type"
+other = "Invalid resource type"
+
+[UnsupportedFileType]
+description = "Unsupported file type"
+other = "Unsupported file type"
+
+[FailedToSaveFile]
+description = "Failed to save file"
+other = "Failed to save file: {{.Error}}"
+
+[FailedToSaveSystemSettings]
+description = "Failed to save system settings"
+other = "Failed to save system settings: {{.Error}}"
+
+[SystemSettingsUpdated]
+description = "System settings updated"
+other = "System settings updated"
+
+[FailedToQuerySystemLogs]
+description = "Failed to query system logs"
+other = "Failed to query system logs: {{.Error}}"
+
+# Admin Team Controller Error Messages
+
+[FailedToFetchTeams]
+description = "Failed to fetch teams"
+other = "Failed to fetch teams"
+
+[FailedToCountTeams]
+description = "Failed to count teams"
+other = "Failed to count teams"
+
+[FailedToFetchUsers]
+description = "Failed to fetch users"
+other = "Failed to fetch users"
+
+[TeamNotFound]
+description = "Team not found"
+other = "Team not found"
+
+[DatabaseError]
+description = "Database error"
+other = "Database error"
+
+[InvalidTeamID]
+description = "Invalid Team ID"
+other = "Invalid Team ID"
+
+[FailedToApproveTeam]
+description = "Failed to approve team"
+other = "Failed to approve team"
+
+[TeamApproved]
+description = "Team approved"
+other = "Team approved"
+
+[FailedToBanTeam]
+description = "Failed to ban team"
+other = "Failed to ban team"
+
+[CannotBanAdminTeam]
+description = "Cannot ban admin team"
+other = "Cannot ban admin team"
+
+[TeamBanned]
+description = "Team banned"
+other = "Team banned"
+
+[TeamIsNotBanned]
+description = "Team is not banned"
+other = "Team is not banned"
+
+[FailedToUnbanTeam]
+description = "Failed to unban team"
+other = "Failed to unban team"
+
+[TeamUnbanned]
+description = "Team unbanned"
+other = "Team unbanned"
+
+[FailedToDeleteTeamJoinRequests]
+description = "Failed to delete team join requests"
+other = "Failed to delete team join requests"
+
+[FailedToDeleteTeam]
+description = "Failed to delete team"
+other = "Failed to delete team"
+
+[CannotDeleteAdminTeam]
+description = "Cannot delete admin team"
+other = "Cannot delete admin team"
+
+[TransactionFailed]
+description = "Transaction failed"
+other = "Transaction failed"
+
+[TeamDeleted]
+description = "Team deleted"
+other = "Team deleted"
+
+# Admin User Controller Error Messages
+
+[FailedToCountUsers]
+description = "Failed to count users"
+other = "Failed to count users"
+
+[InvalidRequestParameters]
+description = "Invalid request parameters"
+other = "Invalid request parameters"
+
+[UserNotFound]
+description = "User not found"
+other = "User not found"
+
+[FailedToQueryUser]
+description = "Failed to query user"
+other = "Failed to query user"
+
+[FailedToUpdateUserInfo]
+description = "Failed to update user information"
+other = "Failed to update user information"
+
+[UserInfoUpdated]
+description = "User information updated"
+other = "User information updated"
+
+[FailedToResetPassword]
+description = "Failed to reset password"
+other = "Failed to reset password"
+
+[PasswordReset]
+description = "Password reset"
+other = "Password reset"
+
+[FailedToDeleteUser]
+description = "Failed to delete user"
+other = "Failed to delete user"
+
+[UserDeleted]
+description = "User deleted"
+other = "User deleted"
+
+[UpdateAdminRoleNotAllowed]
+description = "Not allow to update admin's role"
+other = "Not allow to update admin's role"
+
+[DeleteAdminNotAllowed]
+description = "Not allow to delete admin user"
+other = "Not allow to delete admin user"
+
+# Admin Container 错误信息
+
+[InvalidContainer]
+description = "Invalid pod name or container name"
+other = "Invalid pod name or container name"
+
+[FailedToDeleteGame]
+description = "Failed to delete game"
+other = "Failed to delete game"
+
+[GameDeletedSuccessfully]
+description = "Game deleted successfully"
+other = "Game deleted successfully"

@@ -1,0 +1,18 @@
+{
+    "miss_code": "你的验证码呢？",
+    "email_verified": "邮箱已验证！",
+    "invalid_code": "验证码无效",
+    "email_verifying": "邮箱验证中...",
+    "home": "返回主页",
+    "find_password": "找回密码",
+    "reset_password": "重置密码",
+    "empty_email": "请输入邮箱",
+    "input_email": "请输入需要找回密码的账号邮箱",
+    "send_email": "发送找回密码邮件",
+    "sent_email": "已发送找回密码邮件，请检查邮箱",
+    "new_password": "请输入新密码",
+    "check_password": "确认密码",
+    "not_equal": "两次输入密码不一致",
+    "not_enough": "密码强度不足",
+    "reset_success": "密码已重置，请重新登录"
+}

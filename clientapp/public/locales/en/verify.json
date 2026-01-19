@@ -1,0 +1,18 @@
+{
+    "miss_code": "Missing Code...",
+    "email_verified": "Email Verified!",
+    "invalid_code": "Invalid Code",
+    "email_verifying": "Email Verifying...",
+    "home": "Back to home",
+    "find_password": "Find Password",
+    "reset_password": "Reset Password",
+    "empty_email": "Enter your email",
+    "input_email": "Enter the email address of your account",
+    "send_email": "Send Password Reset Email",
+    "sent_email": "Password reset email sent, please check your mailbox",
+    "new_password": "Enter a new password",
+    "check_password": "Confirm the password",
+    "not_equal": "Passwords do not match",
+    "not_enough": "Password is too weak",
+    "reset_success": "Password has been reset, please login again"
+}

@@ -1,0 +1,11 @@
+{
+    "please_input_vaild_email": "Please enter a valid email address",
+    "update_email_success": "Email address updated successfully",
+    "sending_verification": "Verification email sent",
+    "email_address": "Email address",
+    "save": "Save",
+    "resend": "Resend",
+    "description": "If you click save button, it means you want to change your email address, and your email verification status will be reset to unverified",
+    "verifed": "Verified!",
+    "not_verifed": "Not verified!"
+}

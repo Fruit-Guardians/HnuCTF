@@ -1,0 +1,16 @@
+{
+    "terminal_hint_part1": "Use command",
+    "terminal_hint_part2": "to submit the flag, click",
+    "terminal_hint_part3": "to get more help.",
+    "waiting_for_result": "[...] Waiting for judge result, please wait..",
+    "submit_correct": "[!] Correct!",
+    "submit_wrong": "[?] This flag is wrong!",
+    "submit_unknow_error": "[?] Unknow error!",
+    "fake_cheat": "[*] Wow, how did you find it? But... is it real?",
+    "command_unknow_prefix": "[?] Unknow command",
+    "command_unknow_suffix": "Click 'help' for more information!",
+    "help_prefix": "Here are some useful commands below :)",
+    "format_warn": "format",
+    "help_message_help": "Show this message",
+    "help_message_submit": "Submit your flag! format: submit flag"
+}

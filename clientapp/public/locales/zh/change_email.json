@@ -1,0 +1,11 @@
+{
+    "please_input_vaild_email": "请输入有效的邮箱地址",
+    "update_email_success": "邮箱地址已更新",
+    "sending_verification": "验证邮箱已发送",
+    "email_address": "邮箱地址",
+    "save": "保存",
+    "resend": "重新发送",
+    "description": "如果你点击了保存, 意味着你想要修改邮箱地址, 你的邮箱验证状态会重新变为未验证",
+    "verifed": "已验证！",
+    "not_verifed": "未验证！"
+}

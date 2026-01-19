@@ -1,0 +1,15 @@
+/target
+watchexec.exe
+.env
+config.yaml
+/data
+k8sconfig.yaml
+uploads
+benchmark
+.VSCodeCounter
+postgres_data
+appdata
+test
+.idea/
+.DS_Store
+docker_test/
