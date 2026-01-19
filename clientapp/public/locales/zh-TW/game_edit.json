@@ -1,0 +1,351 @@
+{
+    "page": {
+        "prev": "上一页",
+        "next": "下一页"
+    },
+    "action": "操作",
+    "events": {
+        "title": "比赛事件",
+        "auto": "自动更新",
+        "submit": {
+            "title": "提交记录",
+            "count": "共 {{count}} 条提交记录",
+            "empty1": "暂无提交记录",
+            "empty2": "等待选手提交后将在此处显示",
+            "time": "提交时间",
+            "status": "状态",
+            "user": "用户",
+            "team": "队伍",
+            "challenge": "题目",
+            "flag": "Flag内容"
+        },
+        "cheat": {
+            "title": "异常记录",
+            "count": "共 {{count}} 条异常记录",
+            "empty1": "暂无异常记录",
+            "empty2": "系统将自动检测并记录异常行为",
+            "someone": "提交他人Flag",
+            "attachment": "未下载附件",
+            "container": "未启动容器",
+            "time": "异常时间",
+            "type": "异常类型",
+            "info": "异常信息",
+            "ip": "提交者IP",
+            "flag": "交串Flag的队伍"
+        },
+        "filter": {
+            "title1": "筛选提交记录",
+            "title2": "筛选异常记录",
+            "add": "添加筛选",
+            "clear": "清空筛选",
+            "select": "筛选条件",
+            "team": "队伍名称",
+            "challenge": "题目名称",
+            "status": "评测状态",
+            "time": "时间范围",
+            "chal_id": "题目ID",
+            "team_id": "队伍ID",
+            "keyword": "关键词",
+            "placeholder": "请输入关键词"
+        }
+    },
+    "basic": {
+        "title": "基本信息",
+        "name": {
+            "label": "比赛名称",
+            "description": "请填写比赛名称"
+        },
+        "start_time": {
+            "label": "开始时间",
+            "description": "请选择比赛开始时间"
+        },
+        "end_time": {
+            "label": "结束时间",
+            "description": "请选择比赛结束时间"
+        },
+        "summary": {
+            "label": "比赛简介",
+            "description": "请填写比赛简介"
+        },
+        "description": {
+            "label": "比赛详细信息",
+            "description": "请填写比赛详细信息 (支持Markdown)"
+        },
+        "practice": {
+            "label": "练习模式",
+            "description": "是否开启练习模式"
+        },
+        "wp": {
+            "label": "WriteUp",
+            "description": "是否需要提交WriteUp"
+        },
+        "visible": {
+            "label": "是否可见",
+            "description": "比赛是否可见"
+        },
+        "group_invite_code_enable": {
+            "label": "启用组邀请码",
+            "description": "启动组邀请码后必须使用分组邀请码才能报名"
+        },
+        "icon": {
+            "label": "比赛图标",
+            "dark": "深色",
+            "light": "浅色"
+        }
+    },
+    "detail": {
+        "title": "详细设置",
+        "invite": {
+            "title": "邀请码",
+            "description": "不需要请留空"
+        },
+        "policy": {
+            "title": "队伍策略",
+            "placeholder": "选择队伍策略",
+            "manual": "管理员手动审核",
+            "auto": "自动通过",
+            "description": "请选择一个队伍策略"
+        },
+        "wp_time": {
+            "title": "WriteUp提交截至时间",
+            "description": "请选择WriteUp提交截至时间"
+        },
+        "limit": {
+            "member": {
+                "title": "队伍人数限制",
+                "description": "请限制队伍的最大人数"
+            },
+            "container": {
+                "title": "队伍容器数量限制",
+                "description": "请限制队伍最多同时开启的容器数量"
+            }
+        },
+        "blood": {
+            "0": "0% 表示关闭加分",
+            "1": "一血加分比例",
+            "2": "二血加分比例",
+            "3": "三血加分比例"
+        },
+        "upload": {
+            "title": "上传比赛海报",
+            "description": "点击上传新的比赛海报",
+            "type": "请选择图片文件",
+            "size": "图片大小不能超过 10 MB",
+            "success": "比赛海报上传成功"
+        }
+    },
+    "timeline": {
+        "invalid": {
+            "index": "无效的时间段索引",
+            "id": "找不到题目 ID"
+        },
+        "title": "比赛时间轴",
+        "name": "时间段名称",
+        "placeholder": "请输入该时间段段名称",
+        "start": "开始时间",
+        "end": "结束时间",
+        "add": {
+            "button": "添加时间段",
+            "title": "添加新的时间段"
+        },
+        "delete": {
+            "title": "确认删除",
+            "description": "删除后将无法恢复"
+        },
+        "drag": "请先添加时间段",
+        "edit": "编辑时间段",
+        "global": {
+            "title": "全局题目",
+            "description": "整个比赛期间都可见的题目",
+            "empty": "暂无全局题目"
+        },
+        "timeline": {
+            "title": "时间段题目",
+            "description": "分配到特定时间段的题目",
+            "empty": "请先添加时间段",
+            "drag": "拖拽题目到这里"
+        }
+    },
+    "group": {
+        "title": "参赛分组管理",
+        "add": {
+            "button": "新建分组",
+            "title": "创建新分组",
+            "description": "为比赛创建一个新的参赛分组",
+            "name": {
+                "label": "分组名称",
+                "placeholder": "例如: 本科组、研究生组"
+            },
+            "info": {
+                "label": "分组描述",
+                "placeholder": "描述这个分组的特点或要求"
+            },
+            "success": "分组创建成功"
+        },
+        "edit": {
+            "title": "编辑分组",
+            "description": "修改分组的名称和描述",
+            "success": "分组更新成功"
+        },
+        "delete_success": "分组删除成功",
+        "error": {
+            "empty": "分组名称不能为空",
+            "long1": "分组名称不能超过100个字符",
+            "long2": "分组描述不能超过500个字符"
+        },
+        "option": "可选",
+        "time": "创建时间",
+        "invite_code": "邀请码(仅在启用组邀请码后有效)",
+        "people_count": "队伍数量",
+        "group_id": "分组ID",
+        "copy": "复制邀请码",
+        "copy_success": "邀请码已复制到剪贴板",
+        "empty": "暂无分组，点击\"创建分组\"开始添加"
+    },
+    "notice": {
+        "empty": "请填写完整的公告信息",
+        "create": {
+            "button": "创建公告",
+            "dialog": "创建一条新公告",
+            "description": "创建的公告将会立即推送给所有参赛选手",
+            "title": {
+                "label": "公告标题",
+                "placeholder": "请输入公告标题"
+            },
+            "content": "公告内容",
+            "success": "公告创建成功"
+        },
+        "list": {
+            "empty": "当前暂无公告",
+            "first": "创建第一条公告来通知参赛选手"
+        },
+        "char": "字",
+        "delete": {
+            "title": "确认删除公告",
+            "confirm": "您确定要删除公告 \"<s>{{title}}</s>\" 吗?",
+            "description": "此操作无法撤销，删除后所有参赛选手将无法再看到此公告！",
+            "success": "公告删除成功"
+        },
+        "title": "共 {{count}} 条公告",
+        "more": "查看更多",
+        "time": "发布时间"
+    },
+    "team": {
+        "approve": {
+            "title": "批准队伍",
+            "name": "批准",
+            "loading": "正在批准队伍"
+        },
+        "ban": {
+            "title": "确认锁定",
+            "description": "您确定要锁定这个队伍吗？这将禁止他们参与比赛！",
+            "ban": "锁定队伍",
+            "loading": "正在锁定队伍"
+        },
+        "unban": {
+            "title": "确认解锁",
+            "description": "您确定要解锁这个队伍吗？这将允许他们继续参与比赛！",
+            "unban": "解锁队伍",
+            "loading": "正在解锁队伍"
+        },
+        "refresh": {
+            "success": "队伍状态已更新",
+            "error": "更新队伍状态失败"
+        },
+        "delete": {
+            "title": "确认删除",
+            "description": "您确定要删除这个队伍吗？此操作不可逆！",
+            "delete": "删除队伍",
+            "pending": "正在删除队伍",
+            "success": "队伍已删除",
+            "error": "删除队伍失败"
+        },
+        "status": {
+            "approved": "已审核",
+            "pending": "待审核",
+            "banned": "已禁赛",
+            "rejected": "已拒绝",
+            "accepted": "已参加",
+            "default": "未报名"
+        },
+        "score": "分数",
+        "member": "队伍成员",
+        "list": "成员列表",
+        "user_id": "用户ID",
+        "slogan": "队伍口号",
+        "group_name": "分组名称",
+        "menu": {
+            "title": "打开菜单",
+            "copy": "复制队伍ID"
+        },
+        "empty": "暂无队伍数据",
+        "row": "列显示",
+        "select": "{{a}} / {{b}} 行已选择",
+        "support": "支持队伍名, 队伍ID, 成员用户名, 成员用户ID, 邀请码, 队伍Hash, 队伍口号"
+    },
+    "container": {
+        "status": {
+            "running": "运行中",
+            "stopped": "已停止",
+            "starting": "启动中",
+            "error": "错误",
+            "stopping": "停止中",
+            "queueing": "队列中",
+            "empty": "无容器",
+            "unknow": "未知"
+        },
+        "table": {
+            "select": {
+                "header": "全选",
+                "cell": "选择行"
+            },
+            "expire": "过期时间",
+            "ports": "访问入口",
+            "no_port": "无可用链接"
+        },
+        "stop": {
+            "stop": "停止容器",
+            "title": "确认停止",
+            "description": "您确定要停止这个容器吗？",
+            "pending": "正在停止容器...",
+            "success": "容器正在停止",
+            "error": "停止容器失败",
+            "batch": {
+                "title": "批量停止 ({{count}})",
+                "select": "请至少选择一个容器",
+                "confirm": "确认批量停止",
+                "description": "您确定要停止选中的 {{count}} 个容器吗？",
+                "pending": "正在停止 {{count}} 个容器...",
+                "success1": "成功停止 {{count}} 个容器",
+                "success2": "成功停止容器 {{s}} 个，失败 {{f}} 个",
+                "error": "批量停止容器失败"
+            }
+        },
+        "extend": {
+            "title": "延长容器时间",
+            "pending": "正在延长容器时间...",
+            "success": "容器时间已延长",
+            "error": "延长容器时间失败"
+        },
+        "flag": {
+            "title": "复制Flag",
+            "pending": "正在获取容器中的Flag...",
+            "success": "Flag已复制到剪贴板",
+            "error": "获取容器Flag失败"
+        },
+        "terminal": {
+            "title": "容器终端",
+            "select": "选择一个容器",
+            "copy": {
+                "id": "复制容器ID",
+                "pod": "复制PodID"
+            }
+        },
+        "search": "支持队伍ID, PodID, 容器ID, 队伍名称, 题目名称, 题目ID, 队伍ID",
+        "show": {
+            "error": "显示错误容器",
+            "item": "显示项目"
+        },
+        "empty": "暂无容器数据"
+    }
+}

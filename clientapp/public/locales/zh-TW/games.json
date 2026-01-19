@@ -1,0 +1,11 @@
+{
+    "game_list": "比赛列表",
+    "game_status_running": "进行中",
+    "game_status_ended": "已结束",
+    "game_status_pending": "未开始",
+    "game_status_unknow": "未知",
+    "game_nogame": "怎么一场比赛都没有？？？",
+    "game_join": "加入",
+    "game_nocontext": "没有哦",
+    "game_maybe_click": "<- 也许你可以点这个打开比赛列表("
+}

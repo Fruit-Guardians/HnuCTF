@@ -60,12 +60,12 @@ export default function A1CTFMainPage() {
                 xl:w-64 xl:h-64
                 object-cover rounded-xl
               "
-              // style={{ transformOrigin: 'center' }}
+            // style={{ transformOrigin: 'center' }}
             />
 
             <div
               className="flex flex-col justify-end text-right"
-              // style={{ transformOrigin: 'center' }}
+            // style={{ transformOrigin: 'center' }}
             >
               <span
                 className="

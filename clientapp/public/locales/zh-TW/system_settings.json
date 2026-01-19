@@ -1,0 +1,141 @@
+{
+    "fetch_error": "获取系统设置失败，请刷新后重试",
+    "update_success": "系统设置更新成功",
+    "update_error": "无法保存系统设置，请稍后重试",
+    "save": "保存设置",
+    "saving": "保存中...",
+    "sidebar": {
+        "title": "模块管理",
+        "basic": "基本设置",
+        "resource": "资源设置",
+        "mail": "邮件设置",
+        "template": "模版设置",
+        "security": "安全策略",
+        "account-policy": "账户策略",
+        "others": "其他设置",
+        "aboutus": "关于设置"
+    },
+    "basic": {
+        "title": "基本设置",
+        "name": "系统名称",
+        "name_description": "请填写系统名称",
+        "slogan": "系统标语",
+        "slogan_description": "请填写系统标语",
+        "footer": "页脚内容",
+        "footer_description": "请填写页脚内容",
+        "icp": "备案号(选填)",
+        "icp_description": "请填写工信部备案号",
+        "org": "组织名称",
+        "org_description": "请填写组织名称",
+        "url": "组织链接",
+        "url_description": "请填写组织链接，支持跳转",
+        "logo": "Logo的AltData",
+        "logo_description": "长时间悬停在系统图标上显示的内容",
+        "auth": "统一认证显示名称",
+        "auth_description": "登录页的统一认证按钮显示的名称",
+        "summary": "系统摘要",
+        "summary_description": "请填写系统摘要",
+        "animation": "是否启用背景动画效果",
+        "animation_description": "背景动画资源占用较高，可选择性关闭"
+    },
+    "resource": {
+        "bg_icon1": "背景图标(浅色模式)",
+        "bg_icon2": "背景图标(深色模式)",
+        "sys_icon1": "系统图标(深色模式)",
+        "sys_icon2": "系统图标(浅色模式)",
+        "1blood": "一血金奖杯图标",
+        "1blood_description": "一血的时候展示在屏幕上的图标",
+        "2blood": "二血银奖杯图标",
+        "2blood_description": "二血播报的时候展示在屏幕上的图标",
+        "3blood": "三血铜奖杯图标",
+        "3blood_description": "三血播报的时候展示在屏幕上的图标",
+        "school_icon1": "学校Logo(大)",
+        "school_icon1_description": "你的学校或者组织的大图标",
+        "school_icon2": "学校Logo(小)",
+        "school_icon2_description": "你的学校或者组织的小图标",
+        "upload_success": "上传成功",
+        "upload_failed": "上传失败",
+        "setting": "资源设置",
+        "width": "背景图标宽度",
+        "width_description": "背景动画里每个图片的宽度, 请务必正确指定",
+        "height": "背景图标高度",
+        "height_description": "背景动画里每个图片的高度, 请务必正确指定"
+    },
+    "email": {
+        "title": "邮件设置",
+        "smtp_host": "SMTP服务器",
+        "smtp_port": "SMTP端口",
+        "smtp_port_type": {
+            "title": "SMTP端口类型",
+            "placeholder": "请选择SMTP端口类型",
+            "none": "无(25端口默认)",
+            "tls": "TLS",
+            "starttls": "STARTTLS"
+        },
+        "smtp_sender": "发件人名字",
+        "smtp_username": "SMTP用户名",
+        "smtp_password": {
+            "title": "SMTP密码",
+            "description": "邮箱密码或授权码"
+        },
+        "smtp_address": {
+            "title": "发件人地址",
+            "example": "例如: noreply@example.com"
+        },
+        "smtp_test": {
+            "title": "邮件测试",
+            "empty_error": "请输入测试邮箱",
+            "success": "测试邮件已发送",
+            "send": "测试发送",
+            "description": "请先保存设置再发送测试邮件 :)"
+        }
+    },
+    "template": {
+        "title": "邮件模版",
+        "email_title": "邮件标题",
+        "email_content": "邮件正文",
+        "email_test": "发送测试邮件(模板变量不会被替换)",
+        "email_test_placeholder": "请输入接受者的邮箱",
+        "send": "测试发送",
+        "verify": {
+            "title": "邮箱验证模版",
+            "description": "你可以在这里设置邮箱验证邮件的模板",
+            "email_description": "你可以在这里输入你的邮件模板, 用户名的模版变量是 {username}，验证链接的模版变量是 {verification_link}"
+        },
+        "reset": {
+            "title": "找回密码模板",
+            "description": "你可以在这里设置找回密码邮件的模板",
+            "email_description": "你可以在这里输入你的邮件模板, 用户名的模版变量是 {username}，重置密码链接的模版变量是 {reset_link}"
+        }
+    },
+    "security": {
+        "title": "安全设置",
+        "captcha": "启用验证码",
+        "captcha_description": "在登录、注册等页面启用验证码进行验证"
+    },
+    "user": {
+        "title": "用户策略",
+        "register_enable": "开放注册",
+        "register_enable_description": "是否允许新用户注册",
+        "active_method": "账户激活方式",
+        "active_choose": "请选择账户激活方式",
+        "active_auto": "自动激活（无需验证）",
+        "active_email": "邮箱验证激活",
+        "active_admin": "管理员审核激活"
+    },
+    "other": {
+        "title": "其他设置",
+        "language": "默认语言",
+        "language_placeholder": "请选择默认语言",
+        "zh": "简体中文",
+        "en": "English (US)",
+        "timezone": "时区设置",
+        "timezone_placeholder": "选择系统时区",
+        "shanghai": "中国标准时间 (UTC+8)",
+        "utc": "协调世界时 (UTC)",
+        "nk": "美国东部时间 (UTC-5/4)",
+        "london": "英国标准时间 (UTC+0/1)",
+        "file_max_size": "最大上传文件大小 (MB)"
+    },
+    "aboutus": "关于页面 - 编辑"
+}

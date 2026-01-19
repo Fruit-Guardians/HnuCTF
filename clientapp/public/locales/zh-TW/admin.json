@@ -1,0 +1,10 @@
+{
+    "welcome": "欢迎管理员 {{name}}!",
+    "title": "控制台",
+    "games": "比赛管理",
+    "challenges": "题目管理",
+    "users": "用户管理",
+    "logs": "系统日志",
+    "system": "系统设置",
+    "home": "返回主页"
+}

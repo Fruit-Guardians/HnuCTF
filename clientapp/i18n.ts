@@ -11,8 +11,8 @@ i18n
   .init({
     ns: ['common'],
     defaultNS: 'common',
-    supportedLngs: ['en', 'zh'],
-    fallbackLng: 'en',
+    supportedLngs: ['zh', 'zh-TW', 'en'],
+    fallbackLng: 'zh',
 
     detection: {
       order: ['path', 'localStorage', 'navigator'],
