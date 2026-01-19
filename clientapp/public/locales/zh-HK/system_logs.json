@@ -1,8 +1,8 @@
 {
     "CONTAINER_STOPPED": "容器已停止",
     "STOP_CONTAINER": "停止容器",
-    "CONTAINER_STARTED": "容器已启动",
+    "CONTAINER_STARTED": "容器已啟動",
     "SUBMIT_FLAG": "提交 Flag",
-    "START_CONTAINER": "启动容器",
-    "LOGIN_SUCCESS": "登录成功"
+    "START_CONTAINER": "啟動容器",
+    "LOGIN_SUCCESS": "登錄成功"
 }

@@ -1,351 +1,351 @@
 {
     "page": {
-        "prev": "上一页",
-        "next": "下一页"
+        "prev": "上一頁",
+        "next": "下一頁"
     },
     "action": "操作",
     "events": {
-        "title": "比赛事件",
-        "auto": "自动更新",
+        "title": "比賽事件",
+        "auto": "自動更新",
         "submit": {
-            "title": "提交记录",
-            "count": "共 {{count}} 条提交记录",
-            "empty1": "暂无提交记录",
-            "empty2": "等待选手提交后将在此处显示",
-            "time": "提交时间",
-            "status": "状态",
-            "user": "用户",
-            "team": "队伍",
-            "challenge": "题目",
-            "flag": "Flag内容"
+            "title": "提交記錄",
+            "count": "共 {{count}} 條提交記錄",
+            "empty1": "暫無提交記錄",
+            "empty2": "等待選手提交後將在此處顯示",
+            "time": "提交時間",
+            "status": "狀態",
+            "user": "用戶",
+            "team": "隊伍",
+            "challenge": "題目",
+            "flag": "Flag內容"
         },
         "cheat": {
-            "title": "异常记录",
-            "count": "共 {{count}} 条异常记录",
-            "empty1": "暂无异常记录",
-            "empty2": "系统将自动检测并记录异常行为",
+            "title": "異常記錄",
+            "count": "共 {{count}} 條異常記錄",
+            "empty1": "暫無異常記錄",
+            "empty2": "系統將自動檢測並記錄異常行為",
             "someone": "提交他人Flag",
-            "attachment": "未下载附件",
-            "container": "未启动容器",
-            "time": "异常时间",
-            "type": "异常类型",
-            "info": "异常信息",
+            "attachment": "未下載附件",
+            "container": "未啟動容器",
+            "time": "異常時間",
+            "type": "異常類型",
+            "info": "異常信息",
             "ip": "提交者IP",
-            "flag": "交串Flag的队伍"
+            "flag": "交串Flag的隊伍"
         },
         "filter": {
-            "title1": "筛选提交记录",
-            "title2": "筛选异常记录",
-            "add": "添加筛选",
-            "clear": "清空筛选",
-            "select": "筛选条件",
-            "team": "队伍名称",
-            "challenge": "题目名称",
-            "status": "评测状态",
-            "time": "时间范围",
-            "chal_id": "题目ID",
-            "team_id": "队伍ID",
-            "keyword": "关键词",
-            "placeholder": "请输入关键词"
+            "title1": "篩選提交記錄",
+            "title2": "篩選異常記錄",
+            "add": "添加篩選",
+            "clear": "清空篩選",
+            "select": "篩選條件",
+            "team": "隊伍名稱",
+            "challenge": "題目名稱",
+            "status": "評測狀態",
+            "time": "時間範圍",
+            "chal_id": "題目ID",
+            "team_id": "隊伍ID",
+            "keyword": "關鍵詞",
+            "placeholder": "請輸入關鍵詞"
         }
     },
     "basic": {
         "title": "基本信息",
         "name": {
-            "label": "比赛名称",
-            "description": "请填写比赛名称"
+            "label": "比賽名稱",
+            "description": "請填寫比賽名稱"
         },
         "start_time": {
-            "label": "开始时间",
-            "description": "请选择比赛开始时间"
+            "label": "開始時間",
+            "description": "請選擇比賽開始時間"
         },
         "end_time": {
-            "label": "结束时间",
-            "description": "请选择比赛结束时间"
+            "label": "結束時間",
+            "description": "請選擇比賽結束時間"
         },
         "summary": {
-            "label": "比赛简介",
-            "description": "请填写比赛简介"
+            "label": "比賽簡介",
+            "description": "請填寫比賽簡介"
         },
         "description": {
-            "label": "比赛详细信息",
-            "description": "请填写比赛详细信息 (支持Markdown)"
+            "label": "比賽詳細信息",
+            "description": "請填寫比賽詳細信息 (支持Markdown)"
         },
         "practice": {
-            "label": "练习模式",
-            "description": "是否开启练习模式"
+            "label": "練習模式",
+            "description": "是否開啟練習模式"
         },
         "wp": {
             "label": "WriteUp",
             "description": "是否需要提交WriteUp"
         },
         "visible": {
-            "label": "是否可见",
-            "description": "比赛是否可见"
+            "label": "是否可見",
+            "description": "比賽是否可見"
         },
         "group_invite_code_enable": {
-            "label": "启用组邀请码",
-            "description": "启动组邀请码后必须使用分组邀请码才能报名"
+            "label": "啟用組邀請碼",
+            "description": "啟動組邀請碼後必須使用分組邀請碼才能報名"
         },
         "icon": {
-            "label": "比赛图标",
+            "label": "比賽圖標",
             "dark": "深色",
-            "light": "浅色"
+            "light": "淺色"
         }
     },
     "detail": {
-        "title": "详细设置",
+        "title": "詳細設置",
         "invite": {
-            "title": "邀请码",
-            "description": "不需要请留空"
+            "title": "邀請碼",
+            "description": "不需要請留空"
         },
         "policy": {
-            "title": "队伍策略",
-            "placeholder": "选择队伍策略",
-            "manual": "管理员手动审核",
-            "auto": "自动通过",
-            "description": "请选择一个队伍策略"
+            "title": "隊伍策略",
+            "placeholder": "選擇隊伍策略",
+            "manual": "管理員手動審核",
+            "auto": "自動通過",
+            "description": "請選擇一個隊伍策略"
         },
         "wp_time": {
-            "title": "WriteUp提交截至时间",
-            "description": "请选择WriteUp提交截至时间"
+            "title": "WriteUp提交截至時間",
+            "description": "請選擇WriteUp提交截至時間"
         },
         "limit": {
             "member": {
-                "title": "队伍人数限制",
-                "description": "请限制队伍的最大人数"
+                "title": "隊伍人數限制",
+                "description": "請限制隊伍的最大人數"
             },
             "container": {
-                "title": "队伍容器数量限制",
-                "description": "请限制队伍最多同时开启的容器数量"
+                "title": "隊伍容器數量限制",
+                "description": "請限制隊伍最多同時開啟的容器數量"
             }
         },
         "blood": {
-            "0": "0% 表示关闭加分",
+            "0": "0% 表示關閉加分",
             "1": "一血加分比例",
             "2": "二血加分比例",
             "3": "三血加分比例"
         },
         "upload": {
-            "title": "上传比赛海报",
-            "description": "点击上传新的比赛海报",
-            "type": "请选择图片文件",
-            "size": "图片大小不能超过 10 MB",
-            "success": "比赛海报上传成功"
+            "title": "上傳比賽海報",
+            "description": "點擊上傳新的比賽海報",
+            "type": "請選擇圖片文件",
+            "size": "圖片大小不能超過 10 MB",
+            "success": "比賽海報上傳成功"
         }
     },
     "timeline": {
         "invalid": {
-            "index": "无效的时间段索引",
-            "id": "找不到题目 ID"
+            "index": "無效的時間段索引",
+            "id": "找不到題目 ID"
         },
-        "title": "比赛时间轴",
-        "name": "时间段名称",
-        "placeholder": "请输入该时间段段名称",
-        "start": "开始时间",
-        "end": "结束时间",
+        "title": "比賽時間軸",
+        "name": "時間段名稱",
+        "placeholder": "請輸入該時間段段名稱",
+        "start": "開始時間",
+        "end": "結束時間",
         "add": {
-            "button": "添加时间段",
-            "title": "添加新的时间段"
+            "button": "添加時間段",
+            "title": "添加新的時間段"
         },
         "delete": {
-            "title": "确认删除",
-            "description": "删除后将无法恢复"
+            "title": "確認刪除",
+            "description": "刪除後將無法恢復"
         },
-        "drag": "请先添加时间段",
-        "edit": "编辑时间段",
+        "drag": "請先添加時間段",
+        "edit": "編輯時間段",
         "global": {
-            "title": "全局题目",
-            "description": "整个比赛期间都可见的题目",
-            "empty": "暂无全局题目"
+            "title": "全局題目",
+            "description": "整個比賽期間都可見的題目",
+            "empty": "暫無全局題目"
         },
         "timeline": {
-            "title": "时间段题目",
-            "description": "分配到特定时间段的题目",
-            "empty": "请先添加时间段",
-            "drag": "拖拽题目到这里"
+            "title": "時間段題目",
+            "description": "分配到特定時間段的題目",
+            "empty": "請先添加時間段",
+            "drag": "拖拽題目到這裡"
         }
     },
     "group": {
-        "title": "参赛分组管理",
+        "title": "參賽分組管理",
         "add": {
-            "button": "新建分组",
-            "title": "创建新分组",
-            "description": "为比赛创建一个新的参赛分组",
+            "button": "新建分組",
+            "title": "創建新分組",
+            "description": "為比賽創建一個新的參賽分組",
             "name": {
-                "label": "分组名称",
-                "placeholder": "例如: 本科组、研究生组"
+                "label": "分組名稱",
+                "placeholder": "例如: 本科組、研究生組"
             },
             "info": {
-                "label": "分组描述",
-                "placeholder": "描述这个分组的特点或要求"
+                "label": "分組描述",
+                "placeholder": "描述這個分組的特點或要求"
             },
-            "success": "分组创建成功"
+            "success": "分組創建成功"
         },
         "edit": {
-            "title": "编辑分组",
-            "description": "修改分组的名称和描述",
-            "success": "分组更新成功"
+            "title": "編輯分組",
+            "description": "修改分組的名稱和描述",
+            "success": "分組更新成功"
         },
-        "delete_success": "分组删除成功",
+        "delete_success": "分組刪除成功",
         "error": {
-            "empty": "分组名称不能为空",
-            "long1": "分组名称不能超过100个字符",
-            "long2": "分组描述不能超过500个字符"
+            "empty": "分組名稱不能為空",
+            "long1": "分組名稱不能超過100個字符",
+            "long2": "分組描述不能超過500個字符"
         },
-        "option": "可选",
-        "time": "创建时间",
-        "invite_code": "邀请码(仅在启用组邀请码后有效)",
-        "people_count": "队伍数量",
-        "group_id": "分组ID",
-        "copy": "复制邀请码",
-        "copy_success": "邀请码已复制到剪贴板",
-        "empty": "暂无分组，点击\"创建分组\"开始添加"
+        "option": "可選",
+        "time": "創建時間",
+        "invite_code": "邀請碼(僅在啟用組邀請碼後有效)",
+        "people_count": "隊伍數量",
+        "group_id": "分組ID",
+        "copy": "複製邀請碼",
+        "copy_success": "邀請碼已複製到剪貼板",
+        "empty": "暫無分組，點擊\"創建分組\"開始添加"
     },
     "notice": {
-        "empty": "请填写完整的公告信息",
+        "empty": "請填寫完整的公告信息",
         "create": {
-            "button": "创建公告",
-            "dialog": "创建一条新公告",
-            "description": "创建的公告将会立即推送给所有参赛选手",
+            "button": "創建公告",
+            "dialog": "創建一條新公告",
+            "description": "創建的公告將會立即推送給所有參賽選手",
             "title": {
-                "label": "公告标题",
-                "placeholder": "请输入公告标题"
+                "label": "公告標題",
+                "placeholder": "請輸入公告標題"
             },
-            "content": "公告内容",
-            "success": "公告创建成功"
+            "content": "公告內容",
+            "success": "公告創建成功"
         },
         "list": {
-            "empty": "当前暂无公告",
-            "first": "创建第一条公告来通知参赛选手"
+            "empty": "當前暫無公告",
+            "first": "創建第一條公告來通知參賽選手"
         },
         "char": "字",
         "delete": {
-            "title": "确认删除公告",
-            "confirm": "您确定要删除公告 \"<s>{{title}}</s>\" 吗?",
-            "description": "此操作无法撤销，删除后所有参赛选手将无法再看到此公告！",
-            "success": "公告删除成功"
+            "title": "確認刪除公告",
+            "confirm": "您確定要刪除公告 \"<s>{{title}}</s>\" 嗎?",
+            "description": "此操作無法撤銷，刪除後所有參賽選手將無法再看到此公告！",
+            "success": "公告刪除成功"
         },
-        "title": "共 {{count}} 条公告",
+        "title": "共 {{count}} 條公告",
         "more": "查看更多",
-        "time": "发布时间"
+        "time": "發佈時間"
     },
     "team": {
         "approve": {
-            "title": "批准队伍",
+            "title": "批准隊伍",
             "name": "批准",
-            "loading": "正在批准队伍"
+            "loading": "正在批准隊伍"
         },
         "ban": {
-            "title": "确认锁定",
-            "description": "您确定要锁定这个队伍吗？这将禁止他们参与比赛！",
-            "ban": "锁定队伍",
-            "loading": "正在锁定队伍"
+            "title": "確認鎖定",
+            "description": "您確定要鎖定這個隊伍嗎？這將禁止他們參與比賽！",
+            "ban": "鎖定隊伍",
+            "loading": "正在鎖定隊伍"
         },
         "unban": {
-            "title": "确认解锁",
-            "description": "您确定要解锁这个队伍吗？这将允许他们继续参与比赛！",
-            "unban": "解锁队伍",
-            "loading": "正在解锁队伍"
+            "title": "確認解鎖",
+            "description": "您確定要解鎖這個隊伍嗎？這將允許他們繼續參與比賽！",
+            "unban": "解鎖隊伍",
+            "loading": "正在解鎖隊伍"
         },
         "refresh": {
-            "success": "队伍状态已更新",
-            "error": "更新队伍状态失败"
+            "success": "隊伍狀態已更新",
+            "error": "更新隊伍狀態失敗"
         },
         "delete": {
-            "title": "确认删除",
-            "description": "您确定要删除这个队伍吗？此操作不可逆！",
-            "delete": "删除队伍",
-            "pending": "正在删除队伍",
-            "success": "队伍已删除",
-            "error": "删除队伍失败"
+            "title": "確認刪除",
+            "description": "您確定要刪除這個隊伍嗎？此操作不可逆！",
+            "delete": "刪除隊伍",
+            "pending": "正在刪除隊伍",
+            "success": "隊伍已刪除",
+            "error": "刪除隊伍失敗"
         },
         "status": {
-            "approved": "已审核",
-            "pending": "待审核",
-            "banned": "已禁赛",
-            "rejected": "已拒绝",
-            "accepted": "已参加",
-            "default": "未报名"
+            "approved": "已審核",
+            "pending": "待審核",
+            "banned": "已禁賽",
+            "rejected": "已拒絕",
+            "accepted": "已參加",
+            "default": "未報名"
         },
-        "score": "分数",
-        "member": "队伍成员",
-        "list": "成员列表",
-        "user_id": "用户ID",
-        "slogan": "队伍口号",
-        "group_name": "分组名称",
+        "score": "分數",
+        "member": "隊伍成員",
+        "list": "成員列表",
+        "user_id": "用戶ID",
+        "slogan": "隊伍口號",
+        "group_name": "分組名稱",
         "menu": {
-            "title": "打开菜单",
-            "copy": "复制队伍ID"
+            "title": "打開菜單",
+            "copy": "複製隊伍ID"
         },
-        "empty": "暂无队伍数据",
-        "row": "列显示",
-        "select": "{{a}} / {{b}} 行已选择",
-        "support": "支持队伍名, 队伍ID, 成员用户名, 成员用户ID, 邀请码, 队伍Hash, 队伍口号"
+        "empty": "暫無隊伍數據",
+        "row": "列顯示",
+        "select": "{{a}} / {{b}} 行已選擇",
+        "support": "支持隊伍名, 隊伍ID, 成員用戶名, 成員用戶ID, 邀請碼, 隊伍Hash, 隊伍口號"
     },
     "container": {
         "status": {
-            "running": "运行中",
+            "running": "運行中",
             "stopped": "已停止",
-            "starting": "启动中",
-            "error": "错误",
+            "starting": "啟動中",
+            "error": "錯誤",
             "stopping": "停止中",
-            "queueing": "队列中",
-            "empty": "无容器",
+            "queueing": "隊列中",
+            "empty": "無容器",
             "unknow": "未知"
         },
         "table": {
             "select": {
-                "header": "全选",
-                "cell": "选择行"
+                "header": "全選",
+                "cell": "選擇行"
             },
-            "expire": "过期时间",
-            "ports": "访问入口",
-            "no_port": "无可用链接"
+            "expire": "過期時間",
+            "ports": "訪問入口",
+            "no_port": "無可用鏈接"
         },
         "stop": {
             "stop": "停止容器",
-            "title": "确认停止",
-            "description": "您确定要停止这个容器吗？",
+            "title": "確認停止",
+            "description": "您確定要停止這個容器嗎？",
             "pending": "正在停止容器...",
             "success": "容器正在停止",
-            "error": "停止容器失败",
+            "error": "停止容器失敗",
             "batch": {
                 "title": "批量停止 ({{count}})",
-                "select": "请至少选择一个容器",
-                "confirm": "确认批量停止",
-                "description": "您确定要停止选中的 {{count}} 个容器吗？",
-                "pending": "正在停止 {{count}} 个容器...",
-                "success1": "成功停止 {{count}} 个容器",
-                "success2": "成功停止容器 {{s}} 个，失败 {{f}} 个",
-                "error": "批量停止容器失败"
+                "select": "請至少選擇一個容器",
+                "confirm": "確認批量停止",
+                "description": "您確定要停止選中的 {{count}} 個容器嗎？",
+                "pending": "正在停止 {{count}} 個容器...",
+                "success1": "成功停止 {{count}} 個容器",
+                "success2": "成功停止容器 {{s}} 個，失敗 {{f}} 個",
+                "error": "批量停止容器失敗"
             }
         },
         "extend": {
-            "title": "延长容器时间",
-            "pending": "正在延长容器时间...",
-            "success": "容器时间已延长",
-            "error": "延长容器时间失败"
+            "title": "延長容器時間",
+            "pending": "正在延長容器時間...",
+            "success": "容器時間已延長",
+            "error": "延長容器時間失敗"
         },
         "flag": {
-            "title": "复制Flag",
-            "pending": "正在获取容器中的Flag...",
-            "success": "Flag已复制到剪贴板",
-            "error": "获取容器Flag失败"
+            "title": "複製Flag",
+            "pending": "正在獲取容器中的Flag...",
+            "success": "Flag已複製到剪貼板",
+            "error": "獲取容器Flag失敗"
         },
         "terminal": {
-            "title": "容器终端",
-            "select": "选择一个容器",
+            "title": "容器終端",
+            "select": "選擇一個容器",
             "copy": {
-                "id": "复制容器ID",
-                "pod": "复制PodID"
+                "id": "複製容器ID",
+                "pod": "複製PodID"
             }
         },
-        "search": "支持队伍ID, PodID, 容器ID, 队伍名称, 题目名称, 题目ID, 队伍ID",
+        "search": "支持隊伍ID, PodID, 容器ID, 隊伍名稱, 題目名稱, 題目ID, 隊伍ID",
         "show": {
-            "error": "显示错误容器",
-            "item": "显示项目"
+            "error": "顯示錯誤容器",
+            "item": "顯示項目"
         },
-        "empty": "暂无容器数据"
+        "empty": "暫無容器數據"
     }
 }

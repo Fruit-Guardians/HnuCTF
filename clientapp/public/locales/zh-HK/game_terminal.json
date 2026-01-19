@@ -1,16 +1,16 @@
 {
     "terminal_hint_part1": "使用指令",
-    "terminal_hint_part2": "来提交flag, 点击",
-    "terminal_hint_part3": "来获取更多的帮助。",
-    "waiting_for_result": "[...] 等待 OJ 结果中, 请稍后",
+    "terminal_hint_part2": "來提交flag, 點擊",
+    "terminal_hint_part3": "來獲取更多的幫助。",
+    "waiting_for_result": "[...] 等待 OJ 結果中, 請稍後",
     "submit_correct": "[!] Correct!",
-    "submit_wrong": "[?] flag 错误，请再检查一下",
-    "submit_unknow_error": "[?] 未知错误!",
+    "submit_wrong": "[?] flag 錯誤，請再檢查一下",
+    "submit_unknow_error": "[?] 未知錯誤!",
     "fake_cheat": "[*] Wow, how did you find it? But... is it real?",
     "command_unknow_prefix": "[?] 未知命令",
-    "command_unknow_suffix": "点击 'help' 来获取更多信息!",
+    "command_unknow_suffix": "點擊 'help' 來獲取更多信息!",
     "help_prefix": "下面是一些有用的命令 :)",
     "format_warn": "格式",
-    "help_message_help": "展示这条帮助信息",
+    "help_message_help": "展示這條幫助信息",
     "help_message_submit": "提交你的flag! 格式: submit flag"
 }

@@ -1,10 +1,10 @@
 {
-    "blood_message_p1": "获得了",
+    "blood_message_p1": "獲得了",
     "blood1": "的一血！",
     "blood2": "的二血！",
     "blood3": "的三血！",
-    "congratulations": "恭喜你的队伍",
-    "challenge_name": "题目",
+    "congratulations": "恭喜你的隊伍",
+    "challenge_name": "題目",
     "new_hint": "新增了 Hint",
     "announcement": "公告列表"
 }

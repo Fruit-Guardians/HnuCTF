@@ -35,9 +35,8 @@ const ThemeSwitcher = (
     const currentLang = i18n.language
     const languages = [
         { code: "zh", label: "简", enabled: true },
-        { code: "zh_tw", label: "繁", enabled: false },
+        { code: "zh-HK", label: "繁", enabled: true },
         { code: "en", label: "En", enabled: true },
-        { code: "ja", label: "日", enabled: false },
     ]
 
     const [loadingLang, setLoadingLang] = useState<string | null>(null)
@@ -112,17 +111,17 @@ const ThemeSwitcher = (
         body?.classList.add("background-transition-class");
         setTheme(theme === 'light' ? 'dark' : 'light')
     }
-    
+
     return (
         <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
-                { children ? children : (
+                {children ? children : (
                     <Button variant="outline" size="icon">
                         {/* <WandSparkles className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" /> */}
                         <WandSparkles className="absolute h-[1.2rem] w-[1.2rem]" />
                         <span className="sr-only">Toggle theme</span>
                     </Button>
-                ) }
+                )}
             </DropdownMenuTrigger>
             <DropdownMenuContent className='p-6 pr-10 bg-transparent mt-[-10px] w-52 grid gap-[5px] shadow-none mr-4'
                 style={{ border: 'none' }}
@@ -132,7 +131,7 @@ const ThemeSwitcher = (
                         <div className="relative w-44 h-11 rounded-[10px] overflow-hidden">
                             {/* 将 SkyBackground 放在动画层之外，避免重新渲染 */}
                             {skyBackgroundComponent}
-                            
+
                             <animated.button
                                 className="absolute inset-0 w-full h-full hover:rounded-[0px] 
                                 flex items-center justify-center focus:outline-none"
@@ -172,7 +171,7 @@ const ThemeSwitcher = (
                         </div>
                     </div>
                 </div>
-                <animated.div 
+                <animated.div
                     className='flex border-[1.5px] rounded-[10px] w-44 shadow-md bg-background/90'
                     style={langSpring}
                     onMouseEnter={() => setLangHovered(true)}
@@ -180,23 +179,23 @@ const ThemeSwitcher = (
                 >
                     <div className='flex justify-center w-full gap-1 py-1'>
                         {languages.map(({ code, label, enabled }) => (
-                        <Button
-                            key={code}
-                            variant={currentLang === code ? "default" : "ghost"}
-                            size="icon"
-                            onClick={() => handleChangeLanguage(code)}
-                            disabled={!!loadingLang || !enabled}
-                        >
-                            {loadingLang === code ? (
-                            <Loader2 className="h-4 w-4 animate-spin" />
-                            ) : (
-                            <span className='font-bold'>{label}</span>
-                            )}
-                        </Button>
+                            <Button
+                                key={code}
+                                variant={currentLang === code ? "default" : "ghost"}
+                                size="icon"
+                                onClick={() => handleChangeLanguage(code)}
+                                disabled={!!loadingLang || !enabled}
+                            >
+                                {loadingLang === code ? (
+                                    <Loader2 className="h-4 w-4 animate-spin" />
+                                ) : (
+                                    <span className='font-bold'>{label}</span>
+                                )}
+                            </Button>
                         ))}
                     </div>
                 </animated.div>
-                <animated.div 
+                <animated.div
                     className='flex border-[1.5px] rounded-[10px] w-44 p-1 shadow-md bg-background/90'
                     style={sysColorSpring}
                     onMouseEnter={() => setSysColorHovered(true)}

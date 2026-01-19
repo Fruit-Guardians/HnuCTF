@@ -1,11 +1,11 @@
 {
-    "game_list": "比赛列表",
-    "game_status_running": "进行中",
-    "game_status_ended": "已结束",
-    "game_status_pending": "未开始",
+    "game_list": "比賽列表",
+    "game_status_running": "進行中",
+    "game_status_ended": "已結束",
+    "game_status_pending": "未開始",
     "game_status_unknow": "未知",
-    "game_nogame": "怎么一场比赛都没有？？？",
+    "game_nogame": "怎麼一場比賽都沒有？？？",
     "game_join": "加入",
-    "game_nocontext": "没有哦",
-    "game_maybe_click": "<- 也许你可以点这个打开比赛列表("
+    "game_nocontext": "沒有哦",
+    "game_maybe_click": "<- 也許你可以點這個打開比賽列表("
 }
