@@ -78,21 +78,21 @@ func UserGetGameChallenge(c *gin.Context) {
 	team := c.MustGet("team").(models.Team)
 	gameChallenge := c.MustGet("game_challenge").(models.GameChallenge)
 
-	// 5. Flag 处理，对于没有 flag 的队伍，需要添加到 flag 创建队列里，先判断是否是动态 Flag
-	if gameChallenge.Challenge.FlagType == models.FlagTypeDynamic {
-		allFlags, err := ristretto_tool.CachedAllTeamFlags(game.GameID, gameChallenge.ChallengeID)
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, webmodels.ErrorMessage{
-				Code:    500,
-				Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "SystemError"}),
-			})
-			return
-		}
+	// 5. Flag 处理，对于没有 flag 的队伍，需要添加到 flag 创建队列里
+	// 支持动态 Flag 和静态 Flag
+	allFlags, err := ristretto_tool.CachedAllTeamFlags(game.GameID, gameChallenge.ChallengeID)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, webmodels.ErrorMessage{
+			Code:    500,
+			Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "SystemError"}),
+		})
+		return
+	}
 
-		if _, exists := allFlags[team.TeamID]; !exists {
-			// 缓存不存在，添加到任务队列
-			_ = tasks.NewTeamFlagCreateTask(*gameChallenge.JudgeConfig.FlagTemplate, team.TeamID, game.GameID, gameChallenge.ChallengeID, team.TeamHash, team.TeamName, gameChallenge.Challenge.FlagType)
-		}
+	if _, exists := allFlags[team.TeamID]; !exists {
+		// 缓存不存在，添加到任务队列
+		// 对于动态 Flag，使用模板生成；对于静态 Flag，直接使用 flag 模板内容
+		_ = tasks.NewTeamFlagCreateTask(*gameChallenge.JudgeConfig.FlagTemplate, team.TeamID, game.GameID, gameChallenge.ChallengeID, team.TeamHash, team.TeamName, gameChallenge.Challenge.FlagType)
 	}
 
 	// 3. 使用缓存获取附件信息

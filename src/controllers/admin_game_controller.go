@@ -136,7 +136,7 @@ func AdminCreateGame(c *gin.Context) {
 	adminTeam := models.Team{
 		TeamID:          0,
 		GameID:          game.GameID,
-		TeamName:        "A1CTF-Admins",
+		TeamName:        "HnuCTF-Admins",
 		TeamDescription: nil,
 		TeamAvatar:      nil,
 		TeamSlogan:      nil,

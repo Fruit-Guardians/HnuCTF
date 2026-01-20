@@ -111,17 +111,19 @@ func UserCreateGameContainer(c *gin.Context) {
 		SubmiterIP:           &clientIP,
 	}
 
-	// 用户操作靶机的 60 秒 CD
-	operationName := fmt.Sprintf("%s:containerOperation", user.UserID)
-	timeLimit = getTimeLimitConfig()
-	locked := redistool.LockForATime(operationName, timeLimit)
+	// 用户操作靶机的 60 秒 CD（管理员豁免）
+	if user.Role != models.UserRoleAdmin {
+		operationName := fmt.Sprintf("%s:containerOperation", user.UserID)
+		timeLimit = getTimeLimitConfig()
+		locked := redistool.LockForATime(operationName, timeLimit)
 
-	if !locked {
-		c.JSON(http.StatusTooManyRequests, webmodels.ErrorMessage{
-			Code:    429,
-			Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "RequestTooFast", TemplateData: map[string]interface{}{"Time": timeLimit.Seconds()}}),
-		})
-		return
+		if !locked {
+			c.JSON(http.StatusTooManyRequests, webmodels.ErrorMessage{
+				Code:    429,
+				Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "RequestTooFast", TemplateData: map[string]interface{}{"Time": timeLimit.Seconds()}}),
+			})
+			return
+		}
 	}
 
 	if err := dbtool.DB().Create(&newContainer).Error; err != nil {
@@ -217,17 +219,19 @@ func UserCloseGameContainer(c *gin.Context) {
 
 	curContainer := containers[0]
 
-	// 用户操作靶机的 60 秒 CD
-	operationName := fmt.Sprintf("%s:containerOperation", user.UserID)
-	timeLimit = getTimeLimitConfig()
-	locked := redistool.LockForATime(operationName, timeLimit)
+	// 用户操作靶机的 60 秒 CD（管理员豁免）
+	if user.Role != models.UserRoleAdmin {
+		operationName := fmt.Sprintf("%s:containerOperation", user.UserID)
+		timeLimit = getTimeLimitConfig()
+		locked := redistool.LockForATime(operationName, timeLimit)
 
-	if !locked {
-		c.JSON(http.StatusTooManyRequests, webmodels.ErrorMessage{
-			Code:    429,
-			Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "RequestTooFast", TemplateData: map[string]interface{}{"Time": timeLimit.Seconds()}}),
-		})
-		return
+		if !locked {
+			c.JSON(http.StatusTooManyRequests, webmodels.ErrorMessage{
+				Code:    429,
+				Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "RequestTooFast", TemplateData: map[string]interface{}{"Time": timeLimit.Seconds()}}),
+			})
+			return
+		}
 	}
 
 	// 锁住对一个容器ID的操作
@@ -287,16 +291,19 @@ func UserExtendGameContainer(c *gin.Context) {
 	user := c.MustGet("user").(models.User)
 	challengeID := c.MustGet("challenge_id").(int64)
 
-	operationName := fmt.Sprintf("%s:containerOperation", user.UserID)
-	timeLimit = getTimeLimitConfig()
-	locked := redistool.LockForATime(operationName, timeLimit)
+	// 管理员豁免冷却时间
+	if user.Role != models.UserRoleAdmin {
+		operationName := fmt.Sprintf("%s:containerOperation", user.UserID)
+		timeLimit = getTimeLimitConfig()
+		locked := redistool.LockForATime(operationName, timeLimit)
 
-	if !locked {
-		c.JSON(http.StatusTooManyRequests, webmodels.ErrorMessage{
-			Code:    429,
-			Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "RequestTooFast", TemplateData: map[string]interface{}{"Time": timeLimit.Seconds()}}),
-		})
-		return
+		if !locked {
+			c.JSON(http.StatusTooManyRequests, webmodels.ErrorMessage{
+				Code:    429,
+				Message: i18ntool.Translate(c, &i18n.LocalizeConfig{MessageID: "RequestTooFast", TemplateData: map[string]interface{}{"Time": timeLimit.Seconds()}}),
+			})
+			return
+		}
 	}
 
 	var containers []models.Container
