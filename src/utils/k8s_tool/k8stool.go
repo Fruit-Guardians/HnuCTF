@@ -181,7 +181,7 @@ func ListPods() (*corev1.PodList, error) {
 	if err != nil {
 		return nil, err
 	}
-	namespace := "a1ctf-challenges"
+	namespace := "hnuctf-challenges"
 
 	podList, err := clientset.CoreV1().Pods(namespace).List(context.Background(), metav1.ListOptions{})
 	if err != nil {
@@ -204,7 +204,7 @@ func CreatePod(podInfo *PodInfo) error {
 	if err != nil {
 		return err
 	}
-	namespace := "a1ctf-challenges"
+	namespace := "hnuctf-challenges"
 
 	// 构造 Pod 中的容器列表
 	var containers []corev1.Container
@@ -224,7 +224,7 @@ func CreatePod(podInfo *PodInfo) error {
 
 		// add the flag env
 		container.Env = append(container.Env, corev1.EnvVar{
-			Name:  "A1CTF_FLAG",
+			Name:  "HnuCTF_FLAG",
 			Value: podInfo.Flag,
 		})
 
@@ -461,7 +461,7 @@ func GetPodPorts(podInfo *PodInfo) (*PodPorts, error) {
 	if err != nil {
 		return nil, err
 	}
-	namespace := "a1ctf-challenges"
+	namespace := "hnuctf-challenges"
 
 	// 获取 Pod，检查其所在的 Node
 	pod, err := clientset.CoreV1().Pods(namespace).Get(context.Background(), podInfo.Name, metav1.GetOptions{})
@@ -563,7 +563,7 @@ func forceDeletePod(podName string) error {
 	if err != nil {
 		return err
 	}
-	namespace := "a1ctf-challenges"
+	namespace := "hnuctf-challenges"
 
 	// 忽略所有错误，删除三个组件，防止出问题
 
@@ -595,7 +595,7 @@ func InitNamespace() error {
 	if err != nil {
 		return err
 	}
-	namespace := "a1ctf-challenges"
+	namespace := "hnuctf-challenges"
 
 	_, err = clientset.CoreV1().Namespaces().Get(context.Background(), namespace, metav1.GetOptions{})
 	if err != nil {

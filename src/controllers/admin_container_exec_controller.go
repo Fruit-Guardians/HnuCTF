@@ -112,7 +112,7 @@ func AdminHandleContainerExec(c *gin.Context) {
 	req := clientset.CoreV1().RESTClient().Post().
 		Resource("pods").
 		Name(podName).
-		Namespace("a1ctf-challenges").
+		Namespace("hnuctf-challenges").
 		SubResource("exec").
 		VersionedParams(&metav1.CreateOptions{}, scheme.ParameterCodec)
 
