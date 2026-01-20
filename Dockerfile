@@ -14,7 +14,7 @@ COPY clientapp/ ./
 
 # Generate version.ts with static info
 RUN echo "export const A1CTF_VERSION = \"local-dev\"" > version.ts && \
-    echo "export const A1CTF_NAME = \"A1CTF Local\"" >> version.ts && \
+    echo "export const A1CTF_NAME = \"HnuCTF\"" >> version.ts && \
     echo "export const BUILD_TIME = \"$(date -u +"%Y-%m-%dT%H:%M:%S.000Z")\"" >> version.ts
 
 RUN npm install

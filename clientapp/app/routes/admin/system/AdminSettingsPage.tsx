@@ -116,14 +116,21 @@ export const AdminSettingsPage = () => {
     const form = useForm<SystemSettingsValues>({
         resolver: zodResolver(systemSettingsSchema),
         defaultValues: {
-            systemName: "A1CTF",
-            systemLogo: "",
-            systemSlogan: "A Modern CTF Platform",
-            systemSummary: "",
-            systemICP: "",
-            systemOrganization: "A1CTF",
-            systemOrganizationURL: "https://github.com/carbofish/A1CTF",
-            systemFooter: "© 2025 A1CTF Team",
+            allowRegister: true,
+            systemName: "HnuCTF",
+            systemLogo: "/logo.png",
+            systemBanner: "/banner.png",
+            systemDescription: "A cool CTF platform tailored for HnuCTF",
+            systemRule: `# Competition Rules
+
+1. Any behavior that interferes with the normal operation of the competition platform is prohibited.
+2. Attacking the platform itself (including but not limited to SQL injection, XSS, DDoS) is strictly prohibited.
+3. It is forbidden to share flags or exchange problem-solving ideas with other teams during the competition.
+4. Each person can only join one team.
+5. In case of any dispute, the organizing committee reserves the right of final interpretation.`,
+            systemOrganization: "HnuCTF",
+            systemOrganizationURL: "https://github.com/Fruit-Guardians/HnuCTF",
+            systemFooter: "© 2026 HnuCTF Team",
             systemFavicon: "",
             themeColor: "blue",
             darkModeDefault: true,

@@ -103,7 +103,7 @@ export const GlobalVariableProvider: React.FC<{ children: ReactNode }> = ({ chil
         systemLogo: '',
         systemFavicon: '',
         systemSlogan: '海南大学网络安全竞赛平台',
-        systemFooter: '© 2025 HNUSEC - 海南大学网络安全团队',
+        systemFooter: '© 2026 HnuCTF Team',
         systemICP: '',
         systemOrganization: 'HNUSEC',
         systemOrganizationURL: 'https://www.hnusec.com',
